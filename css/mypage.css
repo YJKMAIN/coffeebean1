@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url("top.css");
+@import url("bottom.css");
+
+
+/* font */
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+/* reset */
+a{color:#333333;}
+body{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+caption{text-align:center; font-size:18px; margin-top:20px; font-weight:bold; font-family:"돋움",Dotum,sans-serif;}
+table{width:550px; margin:0 auto;}
+th, td{border:1px solid #cccccc; height:30px; text-align:center; line-height:30px; font-size:13px; font-family:"돋움",Dotum,sans-serif;}
+td{color:#666666;}
+th{background-color:#F2F2F2; color:#333333; }
+
+#wrap h2{width:100%; height:200px; background:url(../images/mypage/community_visual.jpg) no-repeat 50% top; color:#ffffff; text-align:center; font-size:25px; line-height:202px; font-family: 'Source Serif Pro', serif; font-weight:normal; letter-spacing:1px;}
+
+/* con_wrap1 */
+#con_wrap1{width:1200px; height:230px; border-top:2px solid #333333; border-left:1px solid #cccccc; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; margin:70px auto;}
+#left_wrap1{float:left; width:599px; height:230px; border-right:1px solid #cccccc; 
+					background:url(../images/mypage/mypage_main_img01.gif) no-repeat center 35px;}
+#left_wrap1 p{font-size:14px; text-align:center; margin-top:160px; line-height:24px;}
+#left_wrap1 p .name_color{color:#004DEB;}
+#left_wrap1 p .level_color{color:#004DEB;}
+
+#right_wrap1{float:left; width:600px; height:230px; font-family:"돋움",Dotum,sans-serif;}
+.mp_list1{width:550px; height:204px; margin:13px auto;}
+.mp_list1 li{float:left; width:550px; height:34px;}
+.mp_list1 li span.tit1{width:330px; font-weight:bold; font-size:15px; line-height:34px; display:inline-block; padding-left:5px;
+									background:url(../images/mypage/icon_dot01.gif) no-repeat left center;}
+.mp_list1 li span.tit2{font-size:14px; line-height:34px; display:inline-block;}
+#right_wrap1 button{float:right; width:100px; height:26px; font-size:12px; background-color:#ffffff; border:1px solid #cccccc; margin-top:4px; cursor:pointer;
+									background:url(../images/mypage/icon_arrow_right01.gif) no-repeat 80px center;}
+
+/* con_wrap2 */
+#con_wrap2{width:1200px; height:550px; margin:0 auto;}
+#left_wrap2{float:left; width:580px; height:400px; }
+#con1 {width:580px; height:250px; /*border-bottom:1px solid #cccccc;*/margin-bottom:50px; border-right:1px solid #cccccc; border-left:1px solid #cccccc; border-bottom:1px solid #cccccc;  border-top:2px solid #333333;}
+.tb1 caption{margin-bottom:20px;}
+.tb1 td.span_td{font-weight:bold;  font-family:"돋움",Dotum,sans-serif; font-size:15px; height:35px; line-height:35px;}
+.tb1 td.span_td span{color:#0060FF;}
+
+#con2{width:580px; height:150px; border-right:1px solid #cccccc; border-left:1px solid #cccccc; border-bottom:1px solid #cccccc;  border-top:2px solid #333333;}
+#con2 caption{margin-bottom:20px;}
+
+#right_wrap2{float:right; width:580px; height:400px; background:url(../images/mypage/icon_point.gif) no-repeat 410px 13px; }
+#con3{width:580px; height:250px; border-right:1px solid #cccccc; border-left:1px solid #cccccc; border-bottom:1px solid #cccccc;  border-top:2px solid #333333; margin-bottom:50px;}
+#con3 h3{font-weight:bold;  font-family:"돋움",Dotum,sans-serif; font-size:18px; text-align:center; margin-top:20px;  margin-bottom:20px; }
+#con3 h3 span{color:#0060FF; }
+#con3 p{text-align:center; font-size:13px; line-height:22px; margin-top:25px;}
+#con3 select{margin-left:165px; margin-top:15px;width:250px; height:30px; }
+#con3 select option{height:30px;}
+#btn_wrap1{width:150px; height:35px;  overflow:hidden; position:relative; margin-left:0px; margin-bottom:0; margin:15px auto 0 auto;}
+#btn_wrap1 input{border: 1px solid #333333; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+input#s_btn1{ background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+input#s_btn2{ background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+#con4{width:580px; height:150px; border-top:2px solid #333333; border-right:1px solid #cccccc; border-left:1px solid #cccccc; border-bottom:1px solid #cccccc;  border-top:2px solid #333333;}
+#con4 caption{margin-bottom:20px;}
+
+
+
+
+
+
+

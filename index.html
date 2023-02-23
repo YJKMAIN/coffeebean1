@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>coffeebean korea</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	
+	<script src="js/jquery-1.12.4.min.js"></script>	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.ui.effect-blind.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+	<link rel="stylesheet"   type="text/css" href="css/jquery.bxslider.css"/>
+	<link rel="stylesheet" href="css/jquery.ui.all.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico">
+
+<script>
+$(document).ready(function(){
+
+	/*해상도*/
+	$(window).resize(function(){
+		var width1 = parseInt($(this).width());
+		if(width1 > 1280){
+			$('body').css({width:'100%'});
+		}else if(width1<=1280){
+			$('body').css({width:'1280px'});
+		}else{
+			$('body').css({width:'100%'});
+		}
+	}).resize();
+
+	var slider = $('.bxslider').bxSlider({
+			auto: true, mode:'fade',
+		});
+	var slider_01 =	$('.bxslider_01').bxSlider({
+			auto: true,autoControls: true, mode:'vertical',
+		});
+	var slider_02 =	$('.bxslider_02').bxSlider({
+			auto: true,controls:false,pagerCustom: '#bx-pager1'
+		});
+	var slider_03 =	$('.bxslider_03').bxSlider({
+			auto: true,controls:false,pager:false,maxSlides: 3,moveSlides:1,  slideWidth: 100,slideMargin:0,autoHover:true,
+		});
+		// 클릭시 멈춤 현상 해결 //
+		$(document).on('click','.bx-next, .bx-prev',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		});
+		$(document).on('mouseover','.bx-pager, #bx-pager1',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		slider_02.stopAuto();
+		slider_02.startAuto();
+		});	
+
+});
+</script>
+</head>
+<body>
+<div id="border_wrap">
+		<div id="top_wrap">
+			<header id="top">
+				<div id="quick_wrap">
+						<ul class="quick">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="http://www.coffeebeankorea.com/customer/list.asp">공지사항</a></li>
+						</ul><!-- quick-->
+				</div><!-- quick_wrap -->
+
+				<nav id="main_menu">
+				<div id="main_sub_menu">
+					<h1><a href="index.html"><img src="images/basic/logo2.png" alt="로고" width="280" height="45"/></a></h1>
+					<ul class="menu">
+						<li class="menu1"><a href="intro.html">The Coffeebean</a>
+							<div class="sub_wrap">
+								<ul class="sub sub1">
+									<li><a href="intro.html">커피빈 코리아</a></li>
+									<li><a href="intro.html">커피빈 소식</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu2"><a href="menu.html">Menu</a>
+							<div class="sub_wrap">
+								<ul class="sub sub2">
+									<li><a href="menu.html#coffee">음료</a></li>
+									<li><a href="menu.html#tea">차</a></li>
+									<li><a href="menu.html#cake">케이크</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu3"><a href="promotion.html">Event</a>
+							<div class="sub_wrap">
+								<ul class="sub sub3">
+									<li><a href="promotion.html">진행중인 이벤트</a></li>
+									<li><a href="promotion.html#event_off">종료된 이벤트</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu4"><a href="store.html">Store</a>
+							<div class="sub_wrap">
+								<ul class="sub sub4">
+									<li><a href="store.html">매장찾기</a></li>
+									<li><a href="store.html#new_store">신규매장</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu5"><a href="membersclub.html">Membersclub</a>
+							<div class="sub_wrap">
+								<ul class="sub sub5">
+									<li><a href="membersclub.html">커피빈 멤버스클럽</a></li>
+									<li><a href="membersclub.html">커피빈 카드</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu6"><a href="customer.html">Customer</a>
+							<div class="sub_wrap">
+								<ul class="sub sub6">
+									<li><a href="customer.html#app">커피빈 앱</a></li>
+									<li><a href="customer.html#faq">FAQ</a></li>
+									<li><a href="customer.html#request">문의하기</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+					</ul><!-- menu -->
+					</div><!-- main_sub_menu -->
+					<ul id="login_icon_wrap">
+					<li><a href="login.html"><img src="images/basic/login.png" alt="로그인" width="23" height="25"></a></li>
+					<li><a href="copyright_notice.html" class="pop"><img src="images/basic/cart.png" alt="장바구니" width="28" height="27"></a></li>
+					<li><a href="customer.html"><img src="images/basic/search.png" alt="검색" width="26" height="25"></a></li>
+				</ul>
+				</nav><!-- main_menu -->
+				
+				
+
+			</header><!-- top -->
+		</div><!-- top_wrap -->
+	</div><!--  border_wrap -->
+
+
+		
+	 <div id="s_banner_wrap">
+        <ul class="bxslider">
+          <li class="banner_01"></li>
+          <li class="banner_02"></li>
+          <li class="banner_03"></li>
+        </ul>
+    </div>
+	
+	
+		
+	<div id="brand_wrap">
+		<h2>The Coffeebean</h2>
+		<figure id="brand1">
+			<a href="menu.html" class="brand_img"><img src="images/index/brand1.jpg" alt="이벤트" width="350" height="315"/></a>
+			<figcaption><a href="#" class="brand_txt">Coffeebean Tae &amp; Coffee</a></figcaption>
+		</figure>
+		<figure id="brand2">
+			<a href="menu.html" class="brand_img"><img src="images/index/brand2.jpg" alt="이벤트" width="350" height="315"/></a>
+			<figcaption><a href="#" class="brand_txt">Coffeebean CBTL Machine &amp; Capsule</a></figcaption>
+		</figure>
+		<figure id="brand3">
+			<a href="menu.html" class="brand_img"><img src="images/index/brand3.jpg" alt="이벤트" width="350" height="315"/></a>
+			<figcaption><a href="#" class="brand_txt">Coffeebean Sopoong Coffee</a></figcaption>
+		</figure>
+	</div><!--brand_wrap-->
+	
+	<div id="fall" onclick="location.href='menu.html#tea'">
+	 
+	</div><!--fall-->
+	
+	<div id="best_wrap">
+	<h2>SEASON</h2>
+	<div id="best_sub_wrap">
+			<div id="left_best">
+				<p id="img_l1"><img src="images/index/latte1.jpg" alt="best1" width="530" height="530"/></p>
+				<p id="img_l2"><img src="images/index/latte2.jpg" alt="best2" width="530" height="530"/></p>
+				<p id="img_l3"><img src="images/index/latte3.jpg" alt="best1" width="530" height="530"/></p>
+				<p id="img_l4"><img src="images/index/latte4.jpg" alt="best1" width="530" height="530"/></p>
+			</div><!-- left_best -->
+			<div id="right_best">
+				<ul>
+					<li id="li1"><a href="#"><img src="images/index/latte1_s.jpg" alt="best2" width="250" height="250"/></a></li>
+					<li id="li2"><a href="#"><img src="images/index/latte2_s.jpg" alt="best2" width="250" height="250"/></a></li>
+					<li id="li3"><a href="#"><img src="images/index/latte3_s.jpg" alt="best2" width="250" height="250"/></a></li>
+					<li id="li4"><a href="#"><img src="images/index/latte4_s.jpg" alt="best2" width="250" height="250"/></a></li>
+				</ul>
+			</div><!-- right_best  -->
+
+
+		</div>
+	</div><!-- best_wrap -->
+
+		
+		<div id="contents">
+			<div id="diary_box">
+				<a href="#">
+					<dl>
+						<dt>Coffeebean</dt>
+						<dd>2018 Diary</dd>
+					</dl>
+				</a>
+			</div><!-- social -->
+			<div id="con">
+				<div id="recruit">
+					<a href="#">
+						<dl>
+							<dt>Recruit</dt>
+							<dd>당신의 꿈과 열정을<br>커피빈과 함께하세요</dd>
+						</dl>
+					</a>
+				</div><!-- social -->
+				<div id="social">
+					<a href="#">
+						<dl>
+							<dt>Social<br>Contribution</dt>
+							<dd>커피빈은 국제사회에<br>이바지하는<br>사회적 책임을 수행합니다.</dd>
+						</dl>
+					</a>
+				</div><!-- social -->
+			</div><!-- con -->
+			<div id="store">
+				<div id="store_txt">
+					<a href="#">
+						<dl>
+							<dt>Store</dt>
+							<dd>커피빈 매장을<br>쉽게 찾아보세요</dd>
+						</dl>
+					</a>
+				</div><!-- store_txt -->
+			</div><!-- store -->
+		</div><!-- contents -->
+
+
+	<div id="sns_wrap">
+	<div id="sns_content">
+	<div id="h2_wrap">
+		<h2>Coffeebean SNS</h2>
+		<p id="sns_ex">커피빈의 소식을 한눈에 보실 수 있습니다.</p>
+	</div><!-- h2_wrap -->
+	<p class="prev"><img src="images/index/prev1.png" alt="prev" width="52" height="52"></p>
+	<p class="next"><img src="images/index/next1.png" alt="prev" width="52" height="52"></p>
+
+		<div id="sns_content1">
+			<div id="sns_content2">
+					<ul id="sns_sub1" class="sns_box">
+						<li class="sns1">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 9월 18일</em>
+									<em class="like">2</em>
+								</span>
+								<span>
+									<img src="images/index/muddler.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt1">가을의 커피를 즐겨요<br>
+										나만의 스타일로 즐기는 커피빈 홈카페 아이템들을 만나보세요<br>
+									</span>
+								</span>
+							</a>
+						</li><!-- sns1 -->
+						<li class="sns2">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 9월 18일</em>
+									<em class="like">23</em>
+								</span>
+								<span>
+									<img src="images/index/gagle.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt2">D-1 커피빈X캐스키드슨 럭키데이<br>
+										짜잔- 서프라이즈! VVIP, GOLD 멤버스 회원분들에게 올바른가글 85ml를 드려요!<br>
+										* 본 행사는 재고 소진 시까지 선착순 증정 진행됩니다. 수량 및 소진 시기는 매장 별로 다를 수 있습니다.<br>
+										* 쿠폰사용기간은 10/28(토)까지<br>							
+									</span>
+								</span>
+							</a>
+						</li><!-- sns2 -->
+						<li class="sns3">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 8월 31일</em>
+									<em class="like">18</em>
+								</span>
+								<span>
+									<img src="images/index/drive.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt3">DRIVE THRU 수원송죽DT점 오픈<br>
+										경기권 내 첫 번째 드라이브 스루 매장 수원송죽DT점이 오픈했어요!<br>
+										* 오픈기념으로 수원송죽DT점에서 4만원 이상 충전 시 #커피빈_피크닉백 을 증정해드려요!<br>
+									</span>
+								</span>
+							</a>
+						</li><!-- sns3 -->
+						<li class="sns4">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 8월 27일</em>
+									<em class="like">69</em>
+								</span>
+								<span>
+									<img src="images/index/dbllatte.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt4">비오는 날은 투샷!<br>
+										더 진한 카페라떼 #아이스_더블_카페라떼 와 함께<br> 깊은 에스프레소의 풍미를 더욱 진하게- 아이스로 시원하게 즐겨보세요!<br>
+									</span>
+								</span>
+							</a>
+						</li><!-- sns3 -->
+					</ul><!-- sns_sub1-->
+					<ul id="sns_sub2" class="sns_box">
+						<li class="sns1">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 9월 18일</em>
+									<em class="like">2</em>
+								</span>
+								<span>
+									<img src="images/index/chocolate1.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt1">달콤한 가을은 커피빈에<br>
+										커피빈의 시그니쳐 헤이즐넛 파우더와<br>초콜릿이 어우러진 악마의 달콤함<br>
+										#헤이즐넛초콜릿아이스블렌디드<br>
+										#헤이즐넛초콜릿라떼
+									</span>
+								</span>
+							</a>
+						</li><!-- sns1 -->
+						<li class="sns2">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 9월 18일</em>
+									<em class="like">23</em>
+								</span>
+								<span>
+									<img src="images/index/present.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt2">D-1 커피빈X캐스키드슨 럭키데이<br>
+										VVIP, GOLD 멤버스 회원분들에게 올바른가글을 드려요!<br>
+										* 본 행사는 재고 소진 시까지 선착순 증정 진행됩니다. 수량 및 소진 시기는 매장 별로 다를 수 있습니다.<br>
+										* 쿠폰사용기간은 12/31(토)까지<br>							
+									</span>
+								</span>
+							</a>
+						</li><!-- sns2 -->
+						<li class="sns3">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 7월 5일</em>
+									<em class="like">25</em>
+								</span>
+								<span>
+									<img src="images/index/givecard.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt3">D-5 10월의 기브카드<br>
+										10/1(일) 기브카드 캠페인이 시작됩니다!<br>커피 한 잔과 어울리는 향긋한 커피 테이블을<br>담은 기브카드를 후원해주세요 :)<br>
+										http://bit.ly/기브카드_알림신청<br>
+										10/1(일) 오전 10시부터 후원 가능<br>
+										#기브카드 #장애인부부지원
+									</span>
+								</span>
+							</a>
+						</li><!-- sns3 -->
+						<li class="sns4">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 8월 27일</em>
+									<em class="like">69</em>
+								</span>
+								<span>
+									<img src="images/index/coffee2.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt4">가을의 선선함과 함께 즐기는 커피빈 플랫화이트-!<br>
+										#플랫화이트 #미세한_우유거품으로 <br>#더부드러워요 #가을에는_플랫화이트 <br>#커피빈코리아 #커피빈
+									</span>
+								</span>
+							</a>
+						</li><!-- sns3 -->
+					</ul><!-- sns_sub2-->
+
+					<ul id="sns_sub3" class="sns_box">
+						<li class="sns1">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 6월 9일</em>
+									<em class="like">2</em>
+								</span>
+								<span>
+									<img src="images/index/nespresso.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt1">매혹적인 스모키 향과 깊게 볶은 원두로 <br>다크 초콜릿의 끝 맛을 지닌 이탈리안 에스프레소<br>표시된 제품: 이탈리안 에스프레소(네스프레소 전용).
+									</span>
+								</span>
+							</a>
+						</li><!-- sns1 -->
+						<li class="sns2">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 6월 1일</em>
+									<em class="like">28</em>
+								</span>
+								<span>
+									<img src="images/index/fruit.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt2">신선한 과일컵 냠-<br>아삭하고 맛있는 우리나라 사과와 <br>방울토마토, 달콤한 파인애플로 <br>건강하고 간단한 한 컵 과일을 즐겨보세요 :)<br>#아침과일이_을매나_좋게요 <br>#어머님은_말하셨어요 #과일좀먹어라 #출근길에_냠냠 #스위트믹스 <br>#커피빈맛있다 #먹방 #커피빈그램					
+									</span>
+								</span>
+							</a>
+						</li><!-- sns2 -->
+						<li class="sns3">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 4월 27일</em>
+									<em class="like">18</em>
+								</span>
+								<span>
+									<img src="images/index/cake1.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt3">커피빈의 인기 베이커리 '생크림 카스텔라' 2탄!<br>얼그레이 카스텔라가 출시 되었어요!<br>진한 얼그레이 크림을 듬뿍 넣어 향긋하고<br>촉촉, 달콤한 커피빈의 #얼그레이_카스텔라<br>를 즐겨보세요!은은한 얼그레이 향처럼<br>기분좋은 수요일이 될 거에요 (=̴̶̷̤̄ ₃ =̴̶̷̤̄)♡<br>#커피빈 #커피빈맛있다<br> #콩다방 #얼그레이<br> #카스텔라 #카페스타그램 <br>#먹방 #coffeebean
+									</span>
+								</span>
+							</a>
+						</li><!-- sns3 -->
+						<li class="sns4">
+							<a href="https://www.instagram.com/coffeebeankorea/">
+								<span class="ex">
+									<img src="images/index/sns_logo.png" alt="로고" width="55" height="55"/>
+									<strong>커피빈</strong>
+									<em class="time">2017년 3월 39일</em>
+									<em class="like">69</em>
+								</span>
+								<span>
+									<img src="images/index/cake2.jpg" alt="sns" width="295" height="153"/>
+									<span class="sns_txt4">촉촉하고 티라미슈 크림위로<br>달콤 쌉싸름한 에스프레소 시럽을 쥬르륵-! <br>바삭한 타르트와 부드러운 크림 <br>그리고 향긋한 에스프레소 향이 넘나 맛있는 <br>#에스프레소_티라미슈_타르트 를 즐겨요�</span>
+								</span>
+							</a>
+						</li><!-- sns3 -->
+					</ul><!-- sns_sub3-->
+
+				</div><!-- sns_content2 -->
+			</div><!-- sns_content1 -->
+		</div><!-- sns_content -->
+	</div><!-- sns_wrap -->
+
+
+	<div id="bottom_wrap">
+		<div id="notice_sub">
+			<div id="notice_wrap">
+					<p class="notice">공지사항 - 커피빈 웹 사이트 리뉴얼에 따른 이벤트 안내</p>
+					<ul class="bottom_list">
+						<li class="li1"><a href="#">이용약관</a></li>
+						<li class="li2"><a href="#">개인정보취급방침</a></li>
+						<li class="li3"><a href="#">멤버스카드이용약관</a></li>
+						<li class="li4"><a href="#">이메일무단수집거부</a></li>
+					</ul><!-- bottom_list -->
+
+						<select>
+							<option value="커피빈 코리아" onclick="location.href='index.html'">커피빈 코리아</option>
+							<option value="커피빈 US" onclick="location.href='http://coffeebean.com/'">커피빈 US</option>
+						</select>
+
+			</div><!--notice_wrap-->
+		</div><!--notice_sub-->
+		<div id="bottom_sub">
+			<footer id="bottom">
+				<div id="bottom_left">
+					<p id="bottom_logo"><img src="images/index/bottom_logo.png" alt="로고" width="104" height="103" onclick="location.href='index.html'"/></p>
+					<address>서울시 강남구 봉은사로 99길 7<br>
+					사업자등록번호 120-86-07029<span class="address1">(주)커피빈코리아 대표이사 박상배</span><br>
+					고객 센터 운영 시간 : 09:00 - 18:00<span class="address2">TEL:02-1577-4708</span><br>
+					&copy; 2016. The Coffee Bean. All rights reserved.
+					</address>
+					
+				</div><!--bottom_left-->
+				<div id="bottom_right">
+					<ul id="bottom_menu">
+						<li class="bottom_menu1 line1"><a href="intro.html">커피빈소개</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 코리아</a></li>
+								<li><a href="#">커피빈 소식</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu2 line1"><a href="menu.html">메뉴</a>
+							<ul class="bottom_sub">
+								<li><a href="#">음료</a></li>
+								<li><a href="#">차</a></li>
+								<li><a href="#">케이크</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu3 line1"><a href="promotion.html">이벤트</a>
+							<ul class="bottom_sub">
+								<li><a href="#">진행중인 이벤트</a></li>
+								<li><a href="#">종료된 이벤트</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu4 line1"><a href="store.html">매장정보</a>
+							<ul class="bottom_sub">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu5 line1"><a href="membersclub.html">멤버스클럽</a>
+							<ul class="bottom_sub">
+								<li><a href="#">멤버스클럽</a></li>
+								<li><a href="#">커피빈 카드</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu6 line1"><a href="customer.html">고객센터</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 앱</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">문의하기</a></li>
+							</ul>
+						</li>
+					<!--</ul> menu -->
+					</ul><!--bottom_menu-->
+				</div><!--bottom_right-->
+			</footer><!-- bottom -->
+		</div><!-- bottom_sub -->
+	</div><!-- bottom_wrap -->
+</body>
+</html>
+

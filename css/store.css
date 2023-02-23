@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url("top.css");
+@import url("bottom.css");
+
+
+/* font */
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+/* reset */
+a{color:#333333;}
+body{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+
+
+/* main_img */
+#main_img{width:100%; height:40px; background-color:#eaeaea; border-bottom:1px solid #cccccc;}
+#main_img h2{display: inline; font-size:15px; line-height:40px; margin-left:30px;}
+#main_img span{font-size:13px; line-height:40px; margin-left:20px; color:#666666;}
+
+/* container */
+#container{height:750px; border-bottom:1px solid #CCccCC; position:relative;}
+#map_wrap{width:100%; height:750px;}
+#map_info{position:absolute; top:5px; left:30px; width:300px; height:740px; border:1px solid #666666; z-index:10; background-color:#ffffff; overflow:hidden;}
+#tab_menu{width:300px;}
+#tab_menu li{float:left; width:149px; height:40px; text-align:center; font-size:15px; color:#666666; line-height:40px; border-bottom:3px solid #cccccc; border-left:1px solid #666666;}
+#tab_menu li:first-child a{border-left:none;}
+#tab_menu li a{display:block; width:149px; height:40px;}
+
+.selected1{border-bottom:3px solid #7c51a1; height:30px;}
+
+#nTabA01{position:absolute; top:41px; width:300px;}
+#nTabA01_wrap{margin-top:39px; }
+#city, #gu1, #name_search, #service_choice, #search_btn{height:34px; margin-bottom:11px;}
+#city, #gu1{width:124px;}
+#city{margin-right:6px;}
+#name_search{width:253px;}
+#service_choice, #search_btn{width:257px;}
+#search_btn{margin-bottom:45px; color:#ffffff; background-color:#cc99ff; border-radius:20px; border:none; cursor:pointer;}
+#con1{border-bottom:1px solid #666666; padding-left:20px;}
+#store_list{overflow:scroll; height:460px;}
+#store_list li{width:300px; height:99px; border-top:1px solid #666666; position:relative; }
+#store_list li a{display:block; width:298px; height:99px; text-align:left; font-size:13px; margin-left:70px; }
+#store_list li a span{display:block; font:bold 16px/1.5em " 고딕",Gothic,sans-serif; line-height:50px;}
+#store_list li a span.num{position:absolute; border:2px solid #69519D; border-radius:30px; width:30px; height:30px; top:33px; left:22px; text-align:center; line-height:30px;}
+
+#nTabA02{display:none; position:absolute; top:41px; width:300px;}
+#store_list2{height:700px; overflow:scroll;}
+#store_list2 li{width:280px; height:99px; border-top:1px solid #666666; position:relative;}
+#store_list2 li:first-child{border-top:none;}
+#store_list2 li a{display:block; width:200px; height:99px; text-align:left; font-size:13px; margin-left:70px; }
+#store_list2 li a span{display:block; font:bold 16px/1.5em " 고딕",Gothic,sans-serif; line-height:50px;}
+#store_list2 li a span.num{position:absolute; border:2px solid #69519D; border-radius:30px; width:30px; height:30px; top:33px; left:22px; text-align:center; line-height:30px;}
+
+#log_wrap{text-align:center; padding-top:30px; border-bottom:1px solid #666666;}
+#log_wrap h3{font-size:20px; margin-bottom:20px;}
+#log_wrap p{font-size:14px;}
+
+#btn_wrap{width:150px; height:35px;  overflow:hidden; position:relative; margin:20px auto;}
+#btn_wrap .log_btn{border: 1px solid #999999; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+#btn_wrap .log_btn#log1{background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+#btn_wrap .log_btn#log2{background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+/* new_store */
+#new_store{width:1080px; height:500px; margin:10px auto 80px auto;}
+
+#new_store h3{font-family: 'Source Serif Pro', serif; text-align:center; font-size:30px; padding-top:80px; height:60px; margin-bottom:20px;
+				background:url(../images/basic/brand_bg.png) no-repeat center bottom; font-weight:normal;}
+#new_store figure{float:left; width:320px; height:400px; overflow:hidden; margin-left:60px;}
+#new_store figure.st1{margin-left:0;}
+.parent_a{width:320px; height:250px; overflow:hidden;}
+#new_store figure figcaption{font-size:13px; margin-top:15px; text-align:center;}
+#new_store figure figcaption span{display:block; font-size:14px; line-height:20px;}
+#new_store figure figcaption a{display:block;}

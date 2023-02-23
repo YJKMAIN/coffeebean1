@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import url("top.css");
+@import url("bottom.css");
+
+
+/* font */
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+/* reset */
+a{color:#333333;}
+body{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+
+
+/* main_img */
+#main_img{width:100%; height:400px; color:#ffffff; text-align:center;
+		background: url(../images/membersclub/ad_bg.jpg) no-repeat;}
+#main_img h2{font-size:25px; line-height:25px; padding-top:90px;}
+#main_img h2 span{font-size:27px;}
+#main_img p{font-size:16px; line-height:30px; padding-top:50px;}
+
+/* container */
+#container{height:1200px;  width:1200px; margin:100px auto 0 auto;}
+
+/* level */
+#level{margin-top:75px;height:550px;}
+#level #level_img{width:950px; margin:0 auto;}
+#level_info_wrap{width:950px; height:300px; margin:0 auto;}
+#level h3{text-align:center; font-size:25px; padding-bottom:35px;
+				background:url(../images/basic/brand_bg.png) no-repeat center bottom;
+				margin-bottom:60px;}
+#pink, #gold, #vvip{width:250px; height:200px; margin:0 50px; float:left; background-color:#ffffff;}
+#pink{margin-left:0;}
+#vvip{margin-right:0;}
+#pink h4, #gold h4, #vvip h4{text-align:left; height:50px; font-size:20px; background:url(../images/membersclub/tit_bg.png) no-repeat center bottom; line-height:50px;}
+.info_list{height:100px;}
+#pink ul, #gold ul, #vvip ul{width:300px; margin:0 auto; padding-top:30px; text-align:left;}
+#pink ul li, #gold ul li, #vvip ul li{font-size:13px; margin-bottom:7px;}
+
+
+/* register */
+#register{clear:both; padding-top:100px; height:500px; padding-bottom:50px;}
+#register h3{text-align:center; font-size:25px;padding-bottom:35px;
+				background:url(../images/basic/brand_bg.png) no-repeat center bottom;
+				margin-bottom:60px;}
+#register #r_txt1{text-align:center; font-size:15px; margin-top:50px; line-height:27px;}
+#register .step{width:698px; margin:0 auto; margin-top:80px; height:120px; padding-bottom:50px;}
+#step1, #step2, #step3, #step4{float:left; height:120px; width:150px; text-align:center; padding-right:30px;}
+#register h4{background-color:#996666; width:100px; height:35px; text-align:center; font-size:15px; line-height:35px; border-radius:70px; color:#ffffff; margin-left:50px; margin-bottom:30px;}
+
+#step4{margin-right:0; background:none; padding-right:0;}
+#register .txt1{font-size:12px; line-height:18px; margin-top:15px;}
+
+#btn_wrap1{width:153px; height:40px;  overflow:hidden; position:relative;  margin:40px auto 100px auto;}
+#btn_wrap1 input{border: 1px solid #333333; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+#btn_wrap1 input#card_btn1{ background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+#btn_wrap1 input#card_btn2{ background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+/* card */
+#card{width:1000px; height:404px; margin:80px auto 50px auto; position:relative;
+	background:url(../images/membersclub/card.jpg) no-repeat;}
+#card h3, #card p{position:absolute; color:#330000;}
+#card h3{top:90px; right:250px; font:bold 30px/1em "고딕",Gothic, sans-serif;}
+#card p{/*font-size:17px; line-height:25px;*/ top:170px; right:40px; font:normal 14px/1.8em "돋움",Dotum, sans-serif;}
+
+
+
+#btn{width:150px; height:35px;  overflow:hidden; position:relative;  margin:50px auto 100px auto;}
+#btn input{border: 1px solid #333333; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+#btn input#kind_btn1{ background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+#btn input#kind_btn2{ background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

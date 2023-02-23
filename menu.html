@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>coffeebean korea</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<script src="js/jquery-1.12.4.min.js"></script>	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico">
+	<script>
+		$(document).ready(function(){
+
+	/*해상도*/
+	$(window).resize(function(){
+		var width1 = parseInt($(this).width());
+		if(width1 > 1280){
+			$('body').css({width:'100%'});
+		}else if(width1<=1280){
+			$('body').css({width:'1280px'});
+		}else{
+			$('body').css({width:'100%'});
+		}
+	}).resize();
+
+});
+	</script>
+
+</head>
+<body>
+	<div id="border_wrap">
+		<div id="top_wrap">
+			<header id="top">
+				<div id="quick_wrap">
+						<ul class="quick">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="http://www.coffeebeankorea.com/customer/list.asp">공지사항</a></li>
+						</ul><!-- quick-->
+				</div><!-- quick_wrap -->
+
+				<nav id="main_menu">
+				<div id="main_sub_menu">
+					<h1><a href="index.html"><img src="images/basic/logo2.png" alt="로고" width="280" height="45"/></a></h1>
+					<ul class="menu">
+						<li class="menu1"><a href="intro.html">The Coffeebean</a>
+							<div class="sub_wrap">
+								<ul class="sub sub1">
+									<li><a href="intro.html">커피빈 코리아</a></li>
+									<li><a href="intro.html">커피빈 소식</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu2"><a href="menu.html">Menu</a>
+							<div class="sub_wrap">
+								<ul class="sub sub2">
+									<li><a href="menu.html#coffee">음료</a></li>
+									<li><a href="menu.html#tea">차</a></li>
+									<li><a href="menu.html#cake">케이크</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu3"><a href="promotion.html">Event</a>
+							<div class="sub_wrap">
+								<ul class="sub sub3">
+									<li><a href="promotion.html">진행중인 이벤트</a></li>
+									<li><a href="promotion.html#event_off">종료된 이벤트</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu4"><a href="store.html">Store</a>
+							<div class="sub_wrap">
+								<ul class="sub sub4">
+									<li><a href="store.html">매장찾기</a></li>
+									<li><a href="store.html#new_store">신규매장</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu5"><a href="membersclub.html">Membersclub</a>
+							<div class="sub_wrap">
+								<ul class="sub sub5">
+									<li><a href="membersclub.html">커피빈 멤버스클럽</a></li>
+									<li><a href="membersclub.html">커피빈 카드</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu6"><a href="customer.html">Customer</a>
+							<div class="sub_wrap">
+								<ul class="sub sub6">
+									<li><a href="customer.html#app">커피빈 앱</a></li>
+									<li><a href="customer.html#faq">FAQ</a></li>
+									<li><a href="customer.html#request">문의하기</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+					</ul><!-- menu -->
+					</div><!-- main_sub_menu -->
+					<ul id="login_icon_wrap">
+					<li><a href="login.html"><img src="images/basic/login.png" alt="로그인" width="23" height="25"></a></li>
+					<li><a href="copyright_notice.html" class="pop"><img src="images/basic/cart.png" alt="장바구니" width="28" height="27"></a></li>
+					<li><a href="customer.html"><img src="images/basic/search.png" alt="검색" width="26" height="25"></a></li>
+				</ul>
+				</nav><!-- main_menu -->
+				
+				
+
+			</header><!-- top -->
+		</div><!-- top_wrap -->
+	</div><!--  border_wrap -->
+
+	<div id="tit_wrap">
+			<h2>MENU</h2>
+		</div> <!-- tit_wrap -->
+	<div id="wrap">
+		
+		<p class="prev"><img src="images/menu/left_over.png" alt="prev" width="52" height="52"></p>
+		<p class="next"><img src="images/menu/right_over.png" alt="prev" width="52" height="52"></p>
+		
+		<div id="contents_wrap1">
+			<div id="contents_wrap2">
+				<ul id="coffee" class="content">
+					<li><span class="title1">음료</span><br><span class="title2">COFFEE / BLENDED</span></li>
+					<li class="coffee_r1">
+						<figure class="c1" data-href="ame_click">
+							<img src="images/menu/drink/americano.jpg" alt="아메리카노" width="250" height="250">
+							<figcaption><a href="#ame_click">아메리카노</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="cold_click">
+							<img src="images/menu/drink/coldbrew.jpg" alt="콜드브루" width="250" height="250">
+							<figcaption><a href="#cold_click">콜드브루</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="black1_click">
+							<img src="images/menu/drink/black_dimon_coffee.jpg" alt="블랙다이몬커피" width="250" height="250">
+							<figcaption><a href="#black1_click">블랙 다이몬 커피</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="black2_click">
+							<img src="images/menu/drink/black_dimon_latte.jpg" alt="블랙다이몬카페라떼" width="250" height="250">
+							<figcaption><a href="#black2_click">블랙 다이몬 카페라떼</a></figcaption>
+						</figure>
+					</li><!-- coffee_r1 -->
+					<li class="coffee_r2">
+						<figure class="c1" data-href="black3_click">
+							<img src="images/menu/drink/black_dimon_cafesua.jpg" alt="블랙다이몬카페수아" width="250" height="250">
+							<figcaption><a href="#black3_click">블랙 다이몬 카페수아</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="cafesua_click">
+							<img src="images/menu/drink/cafesua.jpg" alt="카페수아" width="250" height="250">
+							<figcaption><a href="#cafesua_click">카페수아</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="caramel_click">
+							<img src="images/menu/drink/caramel_blended.jpg" alt="캐러멜아이스블렌디드" width="250" height="250">
+							<figcaption><a href="#caramel_click">캐러멜 아이스 블렌디드</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="whitechoco_click">
+							<img src="images/menu/drink/whitechoco_blended.jpg" alt="화이트초콜릿드림블렌디드" width="250" height="250">
+							<figcaption><a href="#whitechoco_click">화이트 초콜릿 드림 블렌디드</a></figcaption>
+						</figure>
+					</li><!-- coffee_r12 -->
+					<li class="coffee_r3">
+						<figure class="c1" data-href="greentea_click">
+							<img src="images/menu/drink/greentea_blended.jpg" alt="그린티아이스블렌디드" width="250" height="250">
+							<figcaption><a href="#greentea_click">그린티 아이스 블렌디드</a></figcaption>
+						</figure>
+						<figure class="c1" data-href="berry_click">
+							<img src="images/menu/drink/berry_blended.jpg" alt="베리베리아이스블렌디드" width="250" height="250">
+							<figcaption><a href="#berry_click">베리베리 아이스 블렌디드</a></figcaption>
+						</figure>
+					</li><!-- coffee_r3 -->
+				</ul><!-- coffee -->
+				<ul id="tea" class="content">
+					<li><span class="title1">차</span><br><span class="title2">TEA</span></li>
+					<li class="tea_r1">
+						<figure>
+							<img src="images/menu/tea/apricot_ceylon.jpg" alt="살구실론" width="250" height="250">
+							<figcaption><a href="">살구실론</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/tea/chai.jpg" alt="차이" width="250" height="250">
+							<figcaption><a href="">차이</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/tea/ginseng_peppermint.jpg" alt="진생페퍼민트" width="250" height="250">
+							<figcaption><a href="">진생 페퍼민트</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/tea/moroccan_mint.jpg" alt="모로칸민트" width="250" height="250">
+							<figcaption><a href="">모로칸 민트</a></figcaption>
+						</figure>
+					</li><!-- tea_r1 -->
+					<li class="tea_r2">
+						<figure>
+							<img src="images/menu/tea/pomegranate_blueberry.jpg" alt="파미그래네이트 블루베리" width="250" height="250">
+							<figcaption><a href="">파미그래네이트 블루베리</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/tea/strawberry_cream_oolong.jpg" alt="스트로베리 크림 우롱" width="250" height="250">
+							<figcaption><a href="">스트로베리 크림 우롱</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/tea/swedish_berries.jpg" alt="스웨디쉬베리즈" width="250" height="250">
+							<figcaption><a href="">스웨디쉬 베리즈</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/tea/tropical_passion.jpg" alt="트로피칸 패숀" width="250" height="250">
+							<figcaption><a href="">트로피칸 패숀</a></figcaption>
+						</figure>
+					</li><!-- tea_r2 -->
+				</ul><!-- tea -->	
+				<ul id="cake" class="content">
+					<li><span class="title1">케이크</span><br><span class="title2">CAKE</span></li>
+					<li class="cake_r1">
+						<figure>
+							<img src="images/menu/cake/cake_tiramisu.jpg" alt="티라미수케이크" width="250" height="250">
+							<figcaption><a href="">티라미수 케이크</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/camembert_cheese_tart.jpg" alt="까망베르 치즈 타르트" width="250" height="250">
+							<figcaption><a href="">까망베르 치즈 타르트</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/chicago_cheese_cake.jpg" alt="시카고치즈케이크" width="250" height="250">
+							<figcaption><a href="">시카고 치즈 케이크</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/chocolate_mosse_cake.jpg" alt="초콜릿무스케이크" width="250" height="250">
+							<figcaption><a href="">초콜릿 무스 케이크</a></figcaption>
+						</figure>
+					</li><!-- cake_r1 -->
+					<li class="cake_r2">
+						<figure>
+							<img src="images/menu/cake/earl_grey_castella.jpg" alt="얼그레이카스테라" width="250" height="250">
+							<figcaption><a href="">얼그레이 카스테라</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/mille_crepe.jpg" alt="밀크레페" width="250" height="250">
+							<figcaption><a href="">밀크레페</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/petit_camembert_cheese_cake.jpg" alt="쁘띠 까망베르 치즈 케이크시카고치즈케이크"  width="250" height="250">
+							<figcaption><a href="">쁘띠 까망베르 치즈 케이크시카고치즈케이크</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/redvalvet_cube.jpg" alt="레드벨벳큐브케이크" width="250" height="250">
+							<figcaption><a href="">레드벨벳큐브케이크</a></figcaption>
+						</figure>
+					</li><!-- cake_r2 -->
+					<li class="cake_r3">
+						<figure>
+							<img src="images/menu/cake/tiramisu_crepe.jpg" alt="티라미수크레페" width="250" height="250">
+							<figcaption><a href="">티라미수크레페</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/menu/cake/tiramisu_cube_cake.jpg" alt="티라미수큐브케이크" width="250" height="250">
+							<figcaption><a href="">티라미수큐브케이크</a></figcaption>
+						</figure>
+					</li>
+				</ul><!-- cake -->
+			</div><!-- contents_wrap2 -->
+		</div><!-- contents_wrap1 -->
+		
+		<div id="click_wrap">
+			<div class="click_content" id="ame_click">
+				<img src="images/menu/drink/americano.jpg" alt="아메리카노" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					
+					<dt>아메리카노</dt>
+					<dd class="eng_tit">Americano</dd>
+					<dd>에스프레소와 얼음, 물의 컴비네이션.</dd>
+					
+				</dl>
+			</div><!-- 아메리카노 -->
+			<div class="click_content" id="cold_click">
+				<img src="images/menu/drink/coldbrew.jpg" alt="콜드브루" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>콜드브루</dt>
+					<dd class="eng_tit">Cold Brew</dd>
+					<dd>20시간 저온 침출 방식의 커피빈만의 <span>노하우가 담긴 스페셜리티 콜드브루</span></dd>
+					
+				</dl>
+			</div><!-- 콜드브루 -->
+			<div class="click_content" id="black1_click">
+				<img src="images/menu/drink/black_dimon_coffee.jpg" alt="블랙 다이몬" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>블랙 다이몬 커피</dt>
+					<dd class="eng_tit">Black Dimon Coffee</dd>
+					<dd>에스프레소와 에스프레소 얼음</dd>
+					
+				</dl>
+			</div><!-- 블랙다이몬 -->
+			<div class="click_content" id="black2_click">
+				<img src="images/menu/drink/black_dimon_latte.jpg" alt="블랙 다이몬 카페라떼" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>블랙 다이몬 커피</dt>
+					<dd class="eng_tit">Black Dimon Coffee</dd>
+					<dd>에스프레소와 에스프레소 얼음, 우유의 컴비네이션.</dd>
+					
+				</dl>
+			</div><!-- 블랙다이몬카페라떼 -->
+			<div class="click_content" id="black3_click">
+				<img src="images/menu/drink/black_dimon_cafesua.jpg" alt="블랙 다이몬 카페수아" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>블랙 다이몬 카페수아</dt>
+					<dd class="eng_tit">Black Dimon Cafesua</dd>
+					<dd>에스프레소와 에스프레소 얼음, 우유,<span>연유의 컴비네이션</span></dd>
+					
+				</dl>
+			</div><!-- 블랙다이몬카페수아 -->
+			<div class="click_content" id="cafesua_click">
+				<img src="images/menu/drink/cafesua.jpg" alt="카페수아" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>카페수아</dt>
+					<dd class="eng_tit">Cafesua</dd>
+					<dd>깊고 진한 더블 에스프레소와 달콤한 연유의 만남</dd>
+					
+				</dl>
+			</div><!-- 카페수아 -->
+			<div class="click_content" id="caramel_click">
+				<img src="images/menu/drink/caramel_blended.jpg" alt="캐러멜 아이스 블렌디드" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>캐러멜 아이스 블렌디드</dt>
+					<dd class="eng_tit">Caramel Blended</dd>
+					<dd>커피 원액과 프렌치 디럭스 바닐라 파우더, 얼음,<span>부드러운 캐러멜과 저지방 우유의 블렌드.</span></dd>
+					
+				</dl>
+			</div><!-- 카라멜 아이스 블렌디드 -->
+			<div class="click_content" id="whitechoco_click">
+				<img src="images/menu/drink/whitechoco_blended.jpg" alt="화이트 초콜릿 블렌디드" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>화이트 초콜릿 블렌디드</dt>
+					<dd class="eng_tit">Caramel Blended</dd>
+					<dd>커피 원액과 화이트 쵸코렛 파우더, 얼음,<span>달콤한 쵸코렛 토핑과 저지방 우유.</span></dd>
+					
+				</dl>
+			</div><!-- 화이트 초콜릿 블렌디드 -->
+			<div class="click_content" id="greentea_click">
+				<img src="images/menu/drink/greentea_blended.jpg" alt="그린티 아이스 블렌디드" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>그린티 아이스 블렌디드</dt>
+					<dd class="eng_tit">Greentea Blended</dd>
+					<dd>마차 그린티 파우더와 얼음,<span>저지방 우유의 블렌드.</span></dd>
+					
+				</dl>
+			</div><!-- 그린티 아이스 블렌디드 -->
+			<div class="click_content" id="berry_click">
+				<img src="images/menu/drink/berry_blended.jpg" alt="베리베리 블렌디드" width="150" height="150" class="drink_img">
+				<img src="images/menu/close.png" alt="닫기" width="39" height="39" class="close_product">
+				<dl>
+					<dt>베리베리 아이스 블렌디드</dt>
+					<dd class="eng_tit">Berry Berry Blended</dd>
+					<dd>상큼한 베리믹스와 얼음의 블렌드</dd>
+				</dl>
+			</div><!-- 베리베리 아이스 블렌디드 -->
+		</div><!-- click_content -->		
+	</div><!-- wrap -->
+	
+	
+
+	<div id="bottom_wrap">
+		<div id="notice_sub">
+			<div id="notice_wrap">
+					<p class="notice">공지사항 - 커피빈 웹 사이트 리뉴얼에 따른 이벤트 안내</p>
+					<ul class="bottom_list">
+						<li class="li1"><a href="#">이용약관</a></li>
+						<li class="li2"><a href="#">개인정보취급방침</a></li>
+						<li class="li3"><a href="#">멤버스카드이용약관</a></li>
+						<li class="li4"><a href="#">이메일무단수집거부</a></li>
+					</ul><!-- bottom_list -->
+
+						<select>
+							<option value="커피빈 코리아" onclick="location.href='index.html'">커피빈 코리아</option>
+							<option value="커피빈 US" onclick="location.href='http://coffeebean.com/'">커피빈 US</option>
+						</select>
+
+			</div><!--notice_wrap-->
+		</div><!--notice_sub-->
+		<div id="bottom_sub">
+			<footer id="bottom">
+				<div id="bottom_left">
+					<p id="bottom_logo"><img src="images/index/bottom_logo.png" alt="로고" width="104" height="103" onclick="location.href='index.html'"/></p>
+					<address>서울시 강남구 봉은사로 99길 7<br>
+					사업자등록번호 120-86-07029<span class="address1">(주)커피빈코리아 대표이사 박상배</span><br>
+					고객 센터 운영 시간 : 09:00 - 18:00<span class="address2">TEL:02-1577-4708</span><br>
+					&copy; 2016. The Coffee Bean. All rights reserved.
+					</address>
+					
+				</div><!--bottom_left-->
+				<div id="bottom_right">
+					<ul id="bottom_menu">
+						<li class="bottom_menu1 line1"><a href="intro.html">커피빈소개</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 코리아</a></li>
+								<li><a href="#">커피빈 소식</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu2 line1"><a href="menu.html">메뉴</a>
+							<ul class="bottom_sub">
+								<li><a href="#">음료</a></li>
+								<li><a href="#">차</a></li>
+								<li><a href="#">케이크</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu3 line1"><a href="promotion.html">이벤트</a>
+							<ul class="bottom_sub">
+								<li><a href="#">진행중인 이벤트</a></li>
+								<li><a href="#">종료된 이벤트</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu4 line1"><a href="store.html">매장정보</a>
+							<ul class="bottom_sub">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu5 line1"><a href="membersclub.html">멤버스클럽</a>
+							<ul class="bottom_sub">
+								<li><a href="#">멤버스클럽</a></li>
+								<li><a href="#">커피빈 카드</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu6 line1"><a href="customer.html">고객센터</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 앱</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">문의하기</a></li>
+							</ul>
+						</li>
+					<!--</ul> menu -->
+					</ul><!--bottom_menu-->
+				</div><!--bottom_right-->
+			</footer><!-- bottom -->
+		</div><!-- bottom_sub -->
+	</div><!-- bottom_wrap -->
+</body>
+</html>

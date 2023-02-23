@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>coffeebean korea</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.12.4.min.js"></script>	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/intro.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/intro.css" media="all" />
+	<link rel="stylesheet"   type="text/css" href="css/jquery.bxslider.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico">
+
+	<script>
+	$(document).ready(function(){
+		/*해상도*/
+		$(window).resize(function(){
+			var width1 = parseInt($(this).width());
+			if(width1 > 1280){
+				$('body').css({width:'100%'});
+			}else if(width1<=1280){
+				$('body').css({width:'1280px'});
+			}else{
+				$('body').css({width:'100%'});
+			}
+		}).resize()
+
+	var slider = $('.bxslider').bxSlider({
+			auto: true, mode:'fade',
+		});
+	var slider_01 =	$('.bxslider_01').bxSlider({
+			auto: true,autoControls: true, mode:'vertical',
+		});
+	var slider_02 =	$('.bxslider_02').bxSlider({
+			auto: true,controls:false,pagerCustom: '#bx-pager1'
+		});
+	var slider_03 =	$('.bxslider_03').bxSlider({
+			auto: true,controls:false,pager:false,maxSlides: 3,moveSlides:1,  slideWidth: 100,slideMargin:0,autoHover:true,
+		});
+		// 클릭시 멈춤 현상 해결 //
+		$(document).on('click','.bx-next, .bx-prev',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		});
+		$(document).on('mouseover','.bx-pager, #bx-pager1',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		slider_02.stopAuto();
+		slider_02.startAuto();
+		});	
+});
+</script>
+</head>
+<body>
+	<div id="border_wrap">
+		<div id="top_wrap">
+			<header id="top">
+				<div id="quick_wrap">
+						<ul class="quick">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="http://www.coffeebeankorea.com/customer/list.asp">공지사항</a></li>
+						</ul><!-- quick-->
+				</div><!-- quick_wrap -->
+
+				<nav id="main_menu">
+				<div id="main_sub_menu">
+					<h1><a href="index.html"><img src="images/basic/logo2.png" alt="로고" width="280" height="45"/></a></h1>
+					<ul class="menu">
+						<li class="menu1"><a href="intro.html">The Coffeebean</a>
+							<div class="sub_wrap">
+								<ul class="sub sub1">
+									<li><a href="intro.html">커피빈 코리아</a></li>
+									<li><a href="intro.html">커피빈 소식</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu2"><a href="menu.html">Menu</a>
+							<div class="sub_wrap">
+								<ul class="sub sub2">
+									<li><a href="menu.html#coffee">음료</a></li>
+									<li><a href="menu.html#tea">차</a></li>
+									<li><a href="menu.html#cake">케이크</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu3"><a href="promotion.html">Event</a>
+							<div class="sub_wrap">
+								<ul class="sub sub3">
+									<li><a href="promotion.html">진행중인 이벤트</a></li>
+									<li><a href="promotion.html#event_off">종료된 이벤트</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu4"><a href="store.html">Store</a>
+							<div class="sub_wrap">
+								<ul class="sub sub4">
+									<li><a href="store.html">매장찾기</a></li>
+									<li><a href="store.html#new_store">신규매장</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu5"><a href="membersclub.html">Membersclub</a>
+							<div class="sub_wrap">
+								<ul class="sub sub5">
+									<li><a href="membersclub.html">커피빈 멤버스클럽</a></li>
+									<li><a href="membersclub.html">커피빈 카드</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu6"><a href="customer.html">Customer</a>
+							<div class="sub_wrap">
+								<ul class="sub sub6">
+									<li><a href="customer.html#app">커피빈 앱</a></li>
+									<li><a href="customer.html#faq">FAQ</a></li>
+									<li><a href="customer.html#request">문의하기</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+					</ul><!-- menu -->
+					</div><!-- main_sub_menu -->
+					<ul id="login_icon_wrap">
+					<li><a href="login.html"><img src="images/basic/login.png" alt="로그인" width="23" height="25"></a></li>
+					<li><a href="copyright_notice.html" class="pop"><img src="images/basic/cart.png" alt="장바구니" width="28" height="27"></a></li>
+					<li><a href="customer.html"><img src="images/basic/search.png" alt="검색" width="26" height="25"></a></li>
+				</ul>
+				</nav><!-- main_menu -->
+				
+				
+
+			</header><!-- top -->
+		</div><!-- top_wrap -->
+	</div><!--  border_wrap -->
+	
+	<div id="s_banner_wrap">
+        <ul class="bxslider">
+          <li class="banner_01"></li>
+          <li class="banner_02"></li>
+          <li class="banner_03"></li>
+        </ul>
+    </div>
+
+	<div id="intro_txt">
+		<h2>All roads that can enjoy coffee and tea</h2>
+		<p>(주) 커피빈 코리아는 미국 international Coffee & tea,LLC와 프랜차이즈 계약을 맺어<br>2000년 6월 설립된 회사로서 최상급의 커피와 차를 제공하는 커피 전문점입니
+		다.<br>커피와 차를 기본으로 함께 할 수 있는 Cake와 Bagel, Sandwich 등의 다양한 베이커리 종류를<br> 판매하고 있습니다. 또한 매장 밖에서도 커피빈을 느낄 수 있
+		도록 해주는 각종 커피 관련 제품들을 판매하여<br><span>'커피와 차를 즐길 수 있는 모든 길'</span>을 제시하고 있습니다.</p>
+	</div><!-- intro_txt -->
+
+	<div id="donation">	
+		
+		<h3>GLOBAL COFFEEBEAN</h3>
+			<p>커피빈은 미국의 커피 전문점 브랜드로서<br>세계 각지에서 커피 열풍을 불러 일으키고 있습니다.<br>또한 현지의 기후와 라이프스타일에 맞는 레시피를 개발하여 현지인들의 큰 호응을 얻고 있습니다.<br>커피빈의 향기롭고 깊은 커피의 맛과 향을 통해 <br>미국과 한국을 넘어 전세계인의 커피로<br>그 영향력을 확대해 나가겠습니다.</p>
+		<!--<div id="btn_wrap2"><input type="button" id="s_btn3" value="본사 사이트 방문"><input type="button" id="s_btn4" value="본사 사이트 방문"></div>-->
+
+	</div><!-- donation -->
+
+	<div id="drink">
+		<div id="coffee">
+			<p><img src="images/intro/roasting.jpg" alt="커피로스팅" width="543" height="340"></p>
+			<div id="coffee_txt">
+			<h3>Coffee<br>Handmade Flavor<br>Ingrediant for Perfection Find Your Flavor</h3>
+			<p>1963년부터 전세계 커피와 티 재배지에서 원산지 별로<br>농장에서 직접 최상품 원료만을 선별하여 수입해왔습니다.<br>캘리포니아 카마리요에 위치한 로스팅 설비 
+			공장에서<br>매일 신선하게 볶으며, 마스터 로스터의 철저한 감독으로<br>고객 여러분께서 최상의 신선도와 탁월한 맛을 즐길 수<br>있도록 최고의 포장상태를 유지하
+			여<br>갓 볶아낸 신선함 그대로 제공드리고 있습니다.</p></div>
+		</div><!-- coffee -->
+		<div id="tea">
+			<p><img src="images/intro/tea_roasting.jpg" alt="차로스팅" width="543" height="340"></p>
+			<div id="tea_txt">
+			<h3>tea<br>Specilaty<br>See + Smell + Taste</h3>
+			<p>커피빈 최상의 티는 최고의 티 원료를 세계적으로<br>가장 뛰어난 재배지역(농장)으로부터 직접 원료<br>공급을 받아 가장 어리고 부드러운 윗부분의 잎 2개와<br>
+			싹을 직접 손으로 채취하며, 커피빈만의 독특하고<br>특별한 맛을 위해 손으로 직접 가향 또는 블렌딩합니다.</p>
+			<div id="btn_wrap1"><input type="button"  id="s_btn1" value="메뉴 보기"><input type="button"  id="s_btn2" value="메뉴 보기"></div>
+			</div>
+		</div><!-- tea -->
+	</div><!-- drink -->
+
+	<div id="global">
+		<div id="global_top">
+			<img src="images/intro/caring-cup.jpg" alt="매장" width="1086" height="348">
+		</div>
+		<div id="global_bottom">
+			<div id="global_left">
+				<div class="top">
+					<img src="images/intro/our-community_1.jpg" alt="케어링컵" width="640" height="362">
+				</div>
+				<!-- <div class="bottom">
+					<img src="images/intro/blended.png" alt="블렌디드" width="315" height="150" class="f_img">
+					<img src="images/intro/abroad.jpg" alt="해외 커피빈" width="315" height="150">
+				</div> -->
+			</div>
+			<div id="global_right">
+				<h2>DIRECT DONATIONS</h2>
+		<p>COFFEE BEAN & TEA LEAF의 설립 이념 중에서<br>사회환원에 대한 부분은 가장 중요한 부분입니다. <br>전 세계 커피농장의 노동자들이 정당한 임금과 대우를 받고 <br>즐겁게 일 할 수 있도록, 우리는 CARING CUP이라는<br>프로그램에 따라 폭넓게 사회봉헌을 실현하고 있습니다.</p>
+		<div id="btn_wrap3"><input type="button" id="donation_btn1" value="사회 공헌 활동 보기"><input type="button" id="donation_btn2" value="사회 공헌 활동 보기"></div>
+			</div>
+		</div>
+	</div><!-- global -->
+	
+
+<div id="bottom_wrap">
+		<div id="notice_sub">
+			<div id="notice_wrap">
+					<p class="notice">공지사항 - 커피빈 웹 사이트 리뉴얼에 따른 이벤트 안내</p>
+					<ul class="bottom_list">
+						<li class="li1"><a href="#">이용약관</a></li>
+						<li class="li2"><a href="#">개인정보취급방침</a></li>
+						<li class="li3"><a href="#">멤버스카드이용약관</a></li>
+						<li class="li4"><a href="#">이메일무단수집거부</a></li>
+					</ul><!-- bottom_list -->
+
+						<select>
+							<option value="커피빈 코리아" onclick="location.href='index.html'">커피빈 코리아</option>
+							<option value="커피빈 US" onclick="location.href='http://coffeebean.com/'">커피빈 US</option>
+						</select>
+
+			</div><!--notice_wrap-->
+		</div><!--notice_sub-->
+		<div id="bottom_sub">
+			<footer id="bottom">
+				<div id="bottom_left">
+					<p id="bottom_logo"><img src="images/index/bottom_logo.png" alt="로고" width="104" height="103" onclick="location.href='index.html'"/></p>
+					<address>서울시 강남구 봉은사로 99길 7<br>
+					사업자등록번호 120-86-07029<span class="address1">(주)커피빈코리아 대표이사 박상배</span><br>
+					고객 센터 운영 시간 : 09:00 - 18:00<span class="address2">TEL:02-1577-4708</span><br>
+					&copy; 2016. The Coffee Bean. All rights reserved.
+					</address>
+					
+				</div><!--bottom_left-->
+				<div id="bottom_right">
+					<ul id="bottom_menu">
+						<li class="bottom_menu1 line1"><a href="intro.html">커피빈소개</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 코리아</a></li>
+								<li><a href="#">커피빈 소식</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu2 line1"><a href="menu.html">메뉴</a>
+							<ul class="bottom_sub">
+								<li><a href="#">음료</a></li>
+								<li><a href="#">차</a></li>
+								<li><a href="#">케이크</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu3 line1"><a href="promotion.html">이벤트</a>
+							<ul class="bottom_sub">
+								<li><a href="#">진행중인 이벤트</a></li>
+								<li><a href="#">종료된 이벤트</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu4 line1"><a href="store.html">매장정보</a>
+							<ul class="bottom_sub">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu5 line1"><a href="membersclub.html">멤버스클럽</a>
+							<ul class="bottom_sub">
+								<li><a href="#">멤버스클럽</a></li>
+								<li><a href="#">커피빈 카드</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu6 line1"><a href="customer.html">고객센터</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 앱</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">문의하기</a></li>
+							</ul>
+						</li>
+					<!--</ul> menu -->
+					</ul><!--bottom_menu-->
+				</div><!--bottom_right-->
+			</footer><!-- bottom -->
+		</div><!-- bottom_sub -->
+	</div><!-- bottom_wrap -->
+</body>
+</html>

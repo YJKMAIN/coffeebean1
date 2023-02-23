@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>coffeebean korea</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	
+	<script src="js/jquery-1.12.4.min.js"></script>	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/mypage.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/mypage.css" media="all" />
+	<link rel="stylesheet"   type="text/css" href="css/jquery.bxslider.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="shortcut icon"  type="image/x-icon" href="images/favicon.ico">
+	<script>
+		$(document).ready(function(){
+
+	/*해상도*/
+	$(window).resize(function(){
+		var width1 = parseInt($(this).width());
+		if(width1 > 1280){
+			$('body').css({width:'100%'});
+		}else if(width1<=1280){
+			$('body').css({width:'1280px'});
+		}else{
+			$('body').css({width:'100%'});
+		}
+	}).resize();
+
+});
+	</script>
+
+</head>
+<body>
+<div id="border_wrap">
+		<div id="top_wrap">
+			<header id="top">
+				<div id="quick_wrap">
+						<ul class="quick">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="http://www.coffeebeankorea.com/customer/list.asp">공지사항</a></li>
+						</ul><!-- quick-->
+				</div><!-- quick_wrap -->
+
+				<nav id="main_menu">
+				<div id="main_sub_menu">
+					<h1><a href="index.html"><img src="images/basic/logo2.png" alt="로고" width="280" height="45"/></a></h1>
+					<ul class="menu">
+						<li class="menu1"><a href="intro.html">The Coffeebean</a>
+							<div class="sub_wrap">
+								<ul class="sub sub1">
+									<li><a href="intro.html">커피빈 코리아</a></li>
+									<li><a href="intro.html">커피빈 소식</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu2"><a href="menu.html">Menu</a>
+							<div class="sub_wrap">
+								<ul class="sub sub2">
+									<li><a href="menu.html#coffee">음료</a></li>
+									<li><a href="menu.html#tea">차</a></li>
+									<li><a href="menu.html#cake">케이크</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu3"><a href="promotion.html">Event</a>
+							<div class="sub_wrap">
+								<ul class="sub sub3">
+									<li><a href="promotion.html">진행중인 이벤트</a></li>
+									<li><a href="promotion.html#event_off">종료된 이벤트</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu4"><a href="store.html">Store</a>
+							<div class="sub_wrap">
+								<ul class="sub sub4">
+									<li><a href="store.html">매장찾기</a></li>
+									<li><a href="store.html#new_store">신규매장</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu5"><a href="membersclub.html">Membersclub</a>
+							<div class="sub_wrap">
+								<ul class="sub sub5">
+									<li><a href="membersclub.html">커피빈 멤버스클럽</a></li>
+									<li><a href="membersclub.html">커피빈 카드</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu6"><a href="customer.html">Customer</a>
+							<div class="sub_wrap">
+								<ul class="sub sub6">
+									<li><a href="customer.html#app">커피빈 앱</a></li>
+									<li><a href="customer.html#faq">FAQ</a></li>
+									<li><a href="customer.html#request">문의하기</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+					</ul><!-- menu -->
+					</div><!-- main_sub_menu -->
+					<ul id="login_icon_wrap">
+					<li><a href="login.html"><img src="images/basic/login.png" alt="로그인" width="23" height="25"></a></li>
+					<li><a href="copyright_notice.html" class="pop"><img src="images/basic/cart.png" alt="장바구니" width="28" height="27"></a></li>
+					<li><a href="customer.html"><img src="images/basic/search.png" alt="검색" width="26" height="25"></a></li>
+				</ul>
+				</nav><!-- main_menu -->
+				
+				
+
+			</header><!-- top -->
+		</div><!-- top_wrap -->
+	</div><!--  border_wrap -->
+			
+	<div id="wrap">
+		<h2>MYPAGE</h2>
+		<div id="con_wrap1">
+			<div id="left_wrap1">
+				<p>커피빈을 이용해 주셔서 감사합니다. <span class="name_color">김예지</span> 님의 등급은 현재 <strong>[핑크]</strong>이십니다.<br>커피빈에서는 <strong>30,000원</strong> 이상 상품 구매 시 배송비가 <strong>무료</strong>입니다.</p>
+			</div><!-- left_wrap1 -->
+			<div id="right_wrap1">
+				<ul class="mp_list1">
+					<li><span class="tit1">가용 적립금</span><span class="tit2">3000원</span><button>상세조회</button></li>
+					<li><span class="tit1">사용 적립금</span><span class="tit2">0원</span></li>
+					<li><span class="tit1">총 적립금</span><span class="tit2"><strong>3000원</strong></span></li>
+					<li><span class="tit1">커피빈 기브카드</span><span class="tit2">47,000원</span><button>상세조회</button></li>
+					<li><span class="tit1">총주문</span><span class="tit2">0원 (0회)</span></li>
+					<li><span class="tit1">쿠폰</span><span class="tit2">0개</span><button>상세조회</button></li>
+				</ul><!-- mp_list1 -->
+			</div><!-- right_wrap1 -->
+		</div><!-- con_wrap1 -->
+		<div id="con_wrap2">
+			<div id="left_wrap2">
+				<div id="con1">
+					<table class="tb1">
+						<caption>카드 구매 / 충전 내역</caption>
+						<tr>
+							<th scope="col" id="th1">카드</th>
+							<th scope="col" id="th2">카드번호</th>
+							<th scope="col" id="th3">결제수단</th>
+							<th scope="col" id="th4">구매/충전일</th>
+							<th scope="col" id="th5">구매/충전금액</th>
+						</tr>
+						<tr>
+							<td headers="th1">핑크</td>
+							<td headers="th2">00000000</td>
+							<td headers="th3">카드 결제</td>
+							<td headers="th4">2017년 11월 01일</td>
+							<td headers="th5">50000원</td>
+						</tr>
+						<tr>
+							<th scope="col" id="th6">카드</th>
+							<th scope="col" id="th7">카드번호</th>
+							<th scope="col" id="th8">사용매장</th>
+							<th scope="col" id="th9">사용일</th>
+							<th scope="col" id="th10">사용금액</th>
+						</tr>
+						<tr>
+							<td headers="th6">핑크</td>
+							<td headers="th7">00000000</td>
+							<td headers="th8">동교동 삼거리점</td>
+							<td headers="th9">2017년 11월 07일</td>
+							<td headers="th10">47000원</td>
+						</tr>
+						<tr>
+							<td colspan="5" class="span_td">커피빈 기브카드 잔액 <span>총 47,000원</span></td>
+						</tr>
+					</table>
+				</div><!-- con1 -->
+				
+				<div id="con2">
+					<table>
+						<caption>적립금</caption>
+						<tr>
+							<th id="th11" scope="col">날짜</th>
+							<th id="th12" scope="col">사용내용</th>
+							<th id="th13" scope="col">적립금</th>
+						</tr>
+						<tr>
+							<td headers="th11">2017년 09월 13일</td>
+							<td headers="th12">회원가입 축하 적립금</td>
+							<td headers="th13">3000원</td>
+						</tr>
+					</table>
+				</div><!-- con2 -->
+			</div><!-- left_wrap2 -->
+			<div id="right_wrap2">
+				<div id="con3">
+					<h3>사용 가능한 콩 포인트는 <span>0</span></h3>
+					<p>쿠폰으로의 전환은 콩(포인트)가 최소 1,000p이상 이어야 합니다.<br>콩을 이용하여 할인 쿠폰으로 전환하고자 하실 경우에는,<br> 아래 금액에 맞는 할인 쿠폰을 선택 후 [쿠폰 전환] 버튼을 클릭하세요</p>
+					<select id="coupone_sel">
+						<option value="cp1">5% 할인쿠폰 (콩 포인트 1000p 사용)</option>
+						<option value="cp2">10% 할인쿠폰 (콩 포인트 3000p 사용)</option>
+						<option value="cp1">20% 할인쿠폰 (콩 포인트 5000p 사용)</option>
+					</select>
+					<div id="btn_wrap1"><input type="button" id="s_btn1" value="쿠폰전환"><input type="button" id="s_btn2" value="쿠폰전환"></div>
+				</div><!-- con3 -->
+				<div id="con4">
+					<table>
+						<caption>쿠폰</caption>
+						<tr>
+							<th id="th14" scope="col">발행일</th>
+							<th id="th15" scope="col">쿠본번호</th>
+							<th id="th16" scope="col">발행일</th>
+						</tr>
+						<tr>
+							<td headers="th14" colspan="3">쿠폰이 없습니다.</td>
+						</tr>
+					</table>
+				</div><!-- con4 -->
+			</div><!-- right_wrap2 -->
+		</div><!-- con_wrap2 -->
+	</div><!-- wrap -->
+
+
+	<div id="bottom_wrap">
+		<div id="notice_sub">
+			<div id="notice_wrap">
+					<p class="notice">공지사항 - 커피빈 웹 사이트 리뉴얼에 따른 이벤트 안내</p>
+					<ul class="bottom_list">
+						<li class="li1"><a href="#">이용약관</a></li>
+						<li class="li2"><a href="#">개인정보취급방침</a></li>
+						<li class="li3"><a href="#">멤버스카드이용약관</a></li>
+						<li class="li4"><a href="#">이메일무단수집거부</a></li>
+					</ul><!-- bottom_list -->
+
+						<select>
+							<option value="커피빈 코리아" onclick="location.href='index.html'">커피빈 코리아</option>
+							<option value="커피빈 US" onclick="location.href='http://coffeebean.com/'">커피빈 US</option>
+						</select>
+
+			</div><!--notice_wrap-->
+		</div><!--notice_sub-->
+		<div id="bottom_sub">
+			<footer id="bottom">
+				<div id="bottom_left">
+					<p id="bottom_logo"><img src="images/index/bottom_logo.png" alt="로고" width="104" height="103" onclick="location.href='index.html'"/></p>
+					<address>서울시 강남구 봉은사로 99길 7<br>
+					사업자등록번호 120-86-07029<span class="address1">(주)커피빈코리아 대표이사 박상배</span><br>
+					고객 센터 운영 시간 : 09:00 - 18:00<span class="address2">TEL:02-1577-4708</span><br>
+					&copy; 2016. The Coffee Bean. All rights reserved.
+					</address>
+					
+				</div><!--bottom_left-->
+				<div id="bottom_right">
+					<ul id="bottom_menu">
+						<li class="bottom_menu1 line1"><a href="intro.html">커피빈소개</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 코리아</a></li>
+								<li><a href="#">커피빈 소식</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu2 line1"><a href="menu.html">메뉴</a>
+							<ul class="bottom_sub">
+								<li><a href="#">음료</a></li>
+								<li><a href="#">차</a></li>
+								<li><a href="#">케이크</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu3 line1"><a href="promotion.html">이벤트</a>
+							<ul class="bottom_sub">
+								<li><a href="#">진행중인 이벤트</a></li>
+								<li><a href="#">종료된 이벤트</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu4 line1"><a href="store.html">매장정보</a>
+							<ul class="bottom_sub">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu5 line1"><a href="membersclub.html">멤버스클럽</a>
+							<ul class="bottom_sub">
+								<li><a href="#">멤버스클럽</a></li>
+								<li><a href="#">커피빈 카드</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu6 line1"><a href="customer.html">고객센터</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 앱</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">문의하기</a></li>
+							</ul>
+						</li>
+					<!--</ul> menu -->
+					</ul><!--bottom_menu-->
+				</div><!--bottom_right-->
+			</footer><!-- bottom -->
+		</div><!-- bottom_sub -->
+	</div><!-- bottom_wrap -->
+</body>
+</html>

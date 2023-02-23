@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>coffeebean korea</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/customer.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/customer.css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<script>
+		$(document).ready(function(){
+
+		/*해상도*/
+		$(window).resize(function(){
+			var width1 = parseInt($(this).width());
+			if(width1 > 1280){
+				$('body').css({width:'100%'});
+			}else if(width1<=1280){
+				$('body').css({width:'1280px'});
+			}else{
+				$('body').css({width:'100%'});
+			}
+		}).resize();
+
+	});
+	</script>
+</head>
+<body>
+	<div id="border_wrap">
+		<div id="top_wrap">
+			<header id="top">
+				<div id="quick_wrap">
+						<ul class="quick">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="http://www.coffeebeankorea.com/customer/list.asp">공지사항</a></li>
+						</ul><!-- quick-->
+				</div><!-- quick_wrap -->
+
+				<nav id="main_menu">
+				<div id="main_sub_menu">
+					<h1><a href="index.html"><img src="images/basic/logo2.png" alt="로고" width="280" height="45"/></a></h1>
+					<ul class="menu">
+						<li class="menu1"><a href="intro.html">The Coffeebean</a>
+							<div class="sub_wrap">
+								<ul class="sub sub1">
+									<li><a href="intro.html">커피빈 코리아</a></li>
+									<li><a href="intro.html">커피빈 소식</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu2"><a href="menu.html">Menu</a>
+							<div class="sub_wrap">
+								<ul class="sub sub2">
+									<li><a href="menu.html#coffee">음료</a></li>
+									<li><a href="menu.html#tea">차</a></li>
+									<li><a href="menu.html#cake">케이크</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu3"><a href="promotion.html">Event</a>
+							<div class="sub_wrap">
+								<ul class="sub sub3">
+									<li><a href="promotion.html">진행중인 이벤트</a></li>
+									<li><a href="promotion.html#event_off">종료된 이벤트</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu4"><a href="store.html">Store</a>
+							<div class="sub_wrap">
+								<ul class="sub sub4">
+									<li><a href="store.html">매장찾기</a></li>
+									<li><a href="store.html#new_store">신규매장</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu5"><a href="membersclub.html">Membersclub</a>
+							<div class="sub_wrap">
+								<ul class="sub sub5">
+									<li><a href="membersclub.html">커피빈 멤버스클럽</a></li>
+									<li><a href="membersclub.html">커피빈 카드</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu6"><a href="customer.html">Customer</a>
+							<div class="sub_wrap">
+								<ul class="sub sub6">
+									<li><a href="customer.html#app">커피빈 앱</a></li>
+									<li><a href="customer.html#faq">FAQ</a></li>
+									<li><a href="customer.html#request">문의하기</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+					</ul><!-- menu -->
+					</div><!-- main_sub_menu -->
+					<ul id="login_icon_wrap">
+					<li><a href="login.html"><img src="images/basic/login.png" alt="로그인" width="23" height="25"></a></li>
+					<li><a href="copyright_notice.html" class="pop"><img src="images/basic/cart.png" alt="장바구니" width="28" height="27"></a></li>
+					<li><a href="customer.html"><img src="images/basic/search.png" alt="검색" width="26" height="25"></a></li>
+				</ul>
+				</nav><!-- main_menu -->
+				
+				
+
+			</header><!-- top -->
+		</div><!-- top_wrap -->
+	</div><!--  border_wrap -->
+		
+	<div id="tit_wrap">
+			<h2>CUSTOMER</h2>
+	
+
+	
+		<div id="search">
+				<div id="btn_wrap">
+					<input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;검색어를 입력하세요"/>
+					<a href="#"><img src="images/customer/search.png" alt="검색버튼" width="40" height="40"/></a>
+				</div><!-- btn_wrap -->
+		</div><!-- search -->
+			<ul id="icon">
+				<li><a href="#app" class="selected1"><span>커피빈 어플</span></a></li>
+				<li><a href="#"><span>FAQ</span></a></li>
+				<li><a href="#"><span>문의하기</span></a></li>
+			</ul><!-- icon -->
+		</div><!-- tit_wrap -->
+
+<div id="container">
+		<div id="app">
+			<h3>어플리케이션</h3>
+			<ul id="app_con">
+				<li id="li1">
+					<a href="#"><img src="images/customer/application1.jpg" alt="핑크어플" width="275" height="257"/></a>
+					<a href="#"><span>커피빈 e-핑크카드</span>이제 스마트폰에서<br>핑크카드를 관리하세요</a>
+				</li>
+				<li id="li2">
+					<a href="#"><img src="images/customer/application2.jpg" alt="멤버스클럽어플" width="275" height="257"/></a>
+					<a href="#"><span>커피빈 멤버스클럽</span>커피빈 카드를 사용하실 때마다<br>다양한 혜택이 제공되는 어플입니다.</a>
+				</li>
+				<li id="li3">
+					<a href="#"><img src="images/customer/application3.jpg" alt="멤버스몰어플" width="275" height="257"/></a>
+					<a href="#"><span>커피빈 멤버스몰</span>커피빈 멤버스클럽의<br>회원전용 쇼핑몰입니다.</a>
+				</li>
+			</ul><!-- app_con -->
+		</div><!-- app -->
+	</div>
+
+	<div id="faq">
+		<div id="faq_wrap">
+			<h3>FAQ</h3>
+			<p id="span_wrap"><span class="span1">FAQ BEST</span><span class="span2"><a href="#">더보기+</a></span></p>
+			<table id="faq_tbl">
+				<caption>FAQ BEST </caption>
+				
+								
+				<tr>
+					<th scope="col" id="no">No</th>
+					<th scope="col" id="group">분류</th>
+					<th scope="col" id="sub">제목</th>
+				</tr>
+				<tr>
+					<td headers="no">1</td>
+					<td headers="group">[회원정보/로그인]</td>
+					<td headers="sub">로그인/로그아웃이 되지 않습니다.</td>
+				</tr>
+				<tr>
+					<td headers="no">2</td>
+					<td headers="group">[회원정보/로그인]</td>
+					<td headers="sub">회원탈퇴는 어떻게 하며, 탈퇴시 개인정보는 어떻게 되나요?</td>
+				</tr>
+				<tr>
+					<td headers="no">3</td>
+					<td headers="group">[회원정보/로그인]</td>
+					<td headers="sub">회원ID와 비밀번호를 잊어버렸어요</td>
+				</tr>
+				<tr>
+					<td headers="no">4</td>
+					<td headers="group">[회원정보/로그인]</td>
+					<td headers="sub">회원정보는 어떻게 변경하나요?</td>
+				</tr>
+				<tr>
+					<td headers="no">5</td>
+					<td headers="group">[회원정보/로그인]</td>
+					<td headers="sub">회원가입이 안되는 경우는 어떻게 하나요?</td>
+				</tr>
+				<tr>
+					<td headers="no">6</td>
+					<td headers="group">[회원정보/로그인]</td>
+					<td headers="sub">실명 확인 오류시 어떻게 하나요?</td>
+				</tr>
+				<tr>
+					<td headers="no">7</td>
+					<td headers="group">[영수증/세금계산서]</td>
+					<td headers="sub">현금영수증은 주문자 명의로만 받을 수 있나요?</td>
+				</tr>
+				<tr>
+					<td headers="no">8</td>
+					<td headers="group">[영수증/세금계산서]</td>
+					<td headers="sub">현금영수증 발급내역을 보려면 어떻게 해야하나요?</td>
+				</tr>
+				<tr>
+					<td headers="no">9</td>
+					<td headers="group">[영수증/세금계산서]</td>
+					<td headers="sub">현금영수증은 어떻게 신청하나요?</td>
+				</tr>
+			</table><!-- faq_tbl -->
+		</div><!-- faq_wrap -->
+	</div><!-- faq -->
+
+	<div id="request">
+		<h4>원하는 답변을 얻지 못하셨나요?</h4>
+		<p>문의하기를 통해 질문해주시면 빠른 시간안에 답변을 드리도록 하겠습니다.</p>
+		<button value="request">문의하기</button>
+	</div><!-- request -->
+
+	<div id="bottom_wrap">
+		<div id="notice_sub">
+			<div id="notice_wrap">
+					<p class="notice">공지사항 - 커피빈 웹 사이트 리뉴얼에 따른 이벤트 안내</p>
+					<ul class="bottom_list">
+						<li class="li1"><a href="#">이용약관</a></li>
+						<li class="li2"><a href="#">개인정보취급방침</a></li>
+						<li class="li3"><a href="#">멤버스카드이용약관</a></li>
+						<li class="li4"><a href="#">이메일무단수집거부</a></li>
+					</ul><!-- bottom_list -->
+
+						<select>
+							<option value="커피빈 코리아" onclick="location.href='index.html'">커피빈 코리아</option>
+							<option value="커피빈 US" onclick="location.href='http://coffeebean.com/'">커피빈 US</option>
+						</select>
+
+			</div><!--notice_wrap-->
+		</div><!--notice_sub-->
+		<div id="bottom_sub">
+			<footer id="bottom">
+				<div id="bottom_left">
+					<p id="bottom_logo"><img src="images/index/bottom_logo.png" alt="로고" width="104" height="103" onclick="location.href='index.html'"/></p>
+					<address>서울시 강남구 봉은사로 99길 7<br>
+					사업자등록번호 120-86-07029<span class="address1">(주)커피빈코리아 대표이사 박상배</span><br>
+					고객 센터 운영 시간 : 09:00 - 18:00<span class="address2">TEL:02-1577-4708</span><br>
+					&copy; 2016. The Coffee Bean. All rights reserved.
+					</address>
+					
+				</div><!--bottom_left-->
+				<div id="bottom_right">
+					<ul id="bottom_menu">
+						<li class="bottom_menu1 line1"><a href="intro.html">커피빈소개</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 코리아</a></li>
+								<li><a href="#">커피빈 소식</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu2 line1"><a href="menu.html">메뉴</a>
+							<ul class="bottom_sub">
+								<li><a href="#">음료</a></li>
+								<li><a href="#">차</a></li>
+								<li><a href="#">케이크</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu3 line1"><a href="promotion.html">이벤트</a>
+							<ul class="bottom_sub">
+								<li><a href="#">진행중인 이벤트</a></li>
+								<li><a href="#">종료된 이벤트</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu4 line1"><a href="store.html">매장정보</a>
+							<ul class="bottom_sub">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu5 line1"><a href="membersclub.html">멤버스클럽</a>
+							<ul class="bottom_sub">
+								<li><a href="#">멤버스클럽</a></li>
+								<li><a href="#">커피빈 카드</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu6 line1"><a href="customer.html">고객센터</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 앱</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">문의하기</a></li>
+							</ul>
+						</li>
+					<!--</ul> menu -->
+					</ul><!--bottom_menu-->
+				</div><!--bottom_right-->
+			</footer><!-- bottom -->
+		</div><!-- bottom_sub -->
+	</div><!-- bottom_wrap -->
+</body>
+</html>

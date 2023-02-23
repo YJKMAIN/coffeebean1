@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+#bottom_wrap{width:100%; height:250px; margin:0 auto; background-color:#333333; color:#b2b2b2; overflow:hidden;}
+#bottom_sub{width:1200px; height:250px; margin:0 auto; padding-top:15px;}
+#bottom_logo{width:104px; height:103px; display:inline;float:left; cursor:pointer; margin-top:15px; margin-right:15px;}
+
+#bottom_left{width:498px; float:left;}
+#bottom address{font-style:normal; margin-top:28px; display:block; line-height:18px; margin-left:0px; display:inline-block;}
+#bottom address span.address1{margin-left:40px;}
+#bottom address span.address2{margin-left:19px;}
+
+.bottom_list{margin-top:20px; padding-bottom:20px; padding-top:8px;}
+.bottom_list li{display:inline; margin-left:40px; font-size:13px;}
+.bottom_list li:first-child{margin-left:5px;}
+.bottom_list li a:hover{text-decoration:underline;} 
+
+
+#bottom_right{float:left; width:600px; padding-top:15px;margin-top:20px; margin:20px 0 0 50px;background:url(../images/basic/ul_bar.jpg)no-repeat 20px 40px;}
+#bottom_menu > li{float:left; width:80px; margin-left:22px; font-size:14px; font-weight:bold;}
+#bottom_menu > li.bottom_menu2{width:50px; }
+#bottom_menu > li.bottom_menu3{width:90px; }
+#bottom_menu > li >a{color:#b2b2b2; font-family:"돋움",Dotum,sans-serif; padding-bottom:5px;}
+#bottom_menu > li > ul{margin-top:15px; }
+#bottom_menu > li > ul > li{font-weight:normal;}
+#bottom_menu > li > ul > li > a{color:#b2b2b2; font-size:13px;}
+
+
+#notice_wrap{width:1200px; height:50px;cursor:pointer; margin:0 auto;}
+#notice_sub{width:100%; height:50px; border-bottom:1px solid #cccccc; }
+#notice_wrap .notice{line-height:50px; font-size:13px; height:50px; width:310px; float:left;}
+#notice_wrap .notice:hover{text-decoration:underline;}
+#notice_wrap select{width:70px; float:left; line-height:50px; width:150px; height:30px; border-bottom:1px solid #cccccc; margin-top:10px; border:none; background-color:#cccccc;}
+.bottom_list{width:460px; height:23px; float:left; margin-top:-8px; margin-left:100px; margin-right:100px;}
+.bottom_list li{display:inline; margin-left:13px; padding-left:13px; height:23px; line-height:23px; background:url(../images/basic/line.jpg) no-repeat left center;}
+.bottom_list li:first-child{background:none; padding-left:0;}
+.bottom_list li a{color:#cccccc; font-size:13px; line-height:50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

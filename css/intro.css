@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url("top.css");
+@import url("bottom.css");
+
+
+/* font */
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+/* reset */
+a{color:#333333;}
+body{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+
+
+#s_banner_wrap {width:100%; height:540px; position: relative; margin:0;}
+.banner_01 {width:100%; height:540px; background:url(../images/main_img/main_slide_banner_1.jpg) no-repeat 50%;}
+.banner_02 {width:100%; height:540px; background:url(../images/main_img/main_slide_banner_2.jpg) no-repeat 50%;}
+.banner_03 {width:100%; height:540px; background:url(../images/main_img/main_slide_banner_3.jpg) no-repeat 50%;}
+
+
+/* intro_txt */
+#intro_txt{height:430px; margin:100px auto 0 auto; text-align:center;}
+#intro_txt h2{font-size:25px; font-family:"바탕",Batang,serif; height:180px;
+		background:url(../images/intro/logo.jpg) no-repeat center 60px;}
+#intro_txt p{font-size:13px; margin-top:30px;}
+#intro_txt p span{color:#660000; font-size:20px; line-height:30px;}
+
+/* donation */
+#donation{width:100%; height:430px; position:relative; font-family:"바탕",Batang,serif; margin-top:0; background:url(../images/intro/mem_main.jpg) no-repeat 100% 100%  fixed;}
+
+#donation h3{position:relative; left:980px; top:80px; font-size:40px; line-height:40px; width:405px; text-align:center; color:#ffffff;}
+#donation p{position:relative; left:990px; top:120px; font-size:15px; width:385px; text-align:center; line-height:23px; color:#ffffff;}
+
+#btn_wrap3{width:150px; height:35px;  overflow:hidden; position:relative; margin-top:30px; margin-left:0px;}
+#btn_wrap3 input{border: 1px solid #333333; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+input#donation_btn1{ background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+input#donation_btn2{ background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+/* drink */
+#drink{width:1086px; height:680px; margin:100px auto;}
+#coffee{width:1086px; height:340px; position:relative;}
+#coffee img{width:543px; height:340px; float:left;}
+#coffee #coffee_txt{width:383px; height:240px; position:absolute; top:0px; left:543px; padding:50px 80px;}
+#coffee #coffee_txt h3{font-size:18px; line-height:25px;}
+#coffee #coffee_txt p{line-height:20px; margin-top:20px;}
+#tea{width:1086px; height:340px; position:relative;}
+#tea img{width:543px; height:340px; float:right; display:inline;}
+#tea #tea_txt{width:383px; height:240px; position:absolute; top:0px; left:0px; padding:50px 80px;}
+#tea #tea_txt h3{font-size:18px; line-height:25px;}
+#tea #tea_txt p{line-height:20px; margin-top:20px;}
+#tea #tea_txt #btn_wrap1{width:150px; height:35px;  overflow:hidden; position:relative; margin-top:20px;}
+#tea #tea_txt #btn_wrap1 input{border: 1px solid #999999; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+#tea #tea_txt input#s_btn1{ background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+#tea #tea_txt input#s_btn2{ background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+
+/* global */
+#global{clear:both; width:1086px; margin:100px auto;}
+#global_top{margin-bottom:10px;}
+#global_bottom{position:relative;}
+#global_left .top{margin-bottom:10px;}
+#global_left .f_img{margin-right:8px;}
+#global_right{position:absolute; top:40px; left:660px; float:right; width:446px;}
+#global h2{font-size:20px;}
+#global p{font-size:13px; line-height:20px; margin-top:20px;}
+#btn_wrap2{width:150px; height:35px;  overflow:hidden; position:relative; left:-100px;}
+#btn_wrap2 input{border: 1px solid #999999; position:absolute; top:0; left:0; width:150px; height:35px; cursor:pointer; line-height:35px;}
+input#s_btn3{ background-color:#ffffff; color:#333333; z-index:2; text-align:center;}
+input#s_btn4{ background-color:#333333; color:#ffffff; z-index:1; text-align:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

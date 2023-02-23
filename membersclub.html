@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>coffeebean korea</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script  type="text/javascript" src="js/membersclub.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/membersclub.css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<script>
+		$(document).ready(function(){
+
+	/*해상도*/
+	$(window).resize(function(){
+		var width1 = parseInt($(this).width());
+		if(width1 > 1280){
+			$('body').css({width:'100%'});
+		}else if(width1<=1280){
+			$('body').css({width:'1280px'});
+		}else{
+			$('body').css({width:'100%'});
+		}
+	}).resize();
+
+});
+	</script>
+</head>
+<body>
+<div id="border_wrap">
+		<div id="top_wrap">
+			<header id="top">
+				<div id="quick_wrap">
+						<ul class="quick">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="http://www.coffeebeankorea.com/customer/list.asp">공지사항</a></li>
+						</ul><!-- quick-->
+				</div><!-- quick_wrap -->
+
+				<nav id="main_menu">
+				<div id="main_sub_menu">
+					<h1><a href="index.html"><img src="images/basic/logo2.png" alt="로고" width="280" height="45"/></a></h1>
+					<ul class="menu">
+						<li class="menu1"><a href="intro.html">The Coffeebean</a>
+							<div class="sub_wrap">
+								<ul class="sub sub1">
+									<li><a href="intro.html">커피빈 코리아</a></li>
+									<li><a href="intro.html">커피빈 소식</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu2"><a href="menu.html">Menu</a>
+							<div class="sub_wrap">
+								<ul class="sub sub2">
+									<li><a href="menu.html#coffee">음료</a></li>
+									<li><a href="menu.html#tea">차</a></li>
+									<li><a href="menu.html#cake">케이크</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu3"><a href="promotion.html">Event</a>
+							<div class="sub_wrap">
+								<ul class="sub sub3">
+									<li><a href="promotion.html">진행중인 이벤트</a></li>
+									<li><a href="promotion.html#event_off">종료된 이벤트</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu4"><a href="store.html">Store</a>
+							<div class="sub_wrap">
+								<ul class="sub sub4">
+									<li><a href="store.html">매장찾기</a></li>
+									<li><a href="store.html#new_store">신규매장</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu5"><a href="membersclub.html">Membersclub</a>
+							<div class="sub_wrap">
+								<ul class="sub sub5">
+									<li><a href="membersclub.html">커피빈 멤버스클럽</a></li>
+									<li><a href="membersclub.html">커피빈 카드</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+						<li class="menu6"><a href="customer.html">Customer</a>
+							<div class="sub_wrap">
+								<ul class="sub sub6">
+									<li><a href="customer.html#app">커피빈 앱</a></li>
+									<li><a href="customer.html#faq">FAQ</a></li>
+									<li><a href="customer.html#request">문의하기</a></li>
+								</ul>
+							</div><!-- sub_wrap -->
+						</li>
+					</ul><!-- menu -->
+					</div><!-- main_sub_menu -->
+					<ul id="login_icon_wrap">
+					<li><a href="login.html"><img src="images/basic/login.png" alt="로그인" width="23" height="25"></a></li>
+					<li><a href="copyright_notice.html" class="pop"><img src="images/basic/cart.png" alt="장바구니" width="28" height="27"></a></li>
+					<li><a href="customer.html"><img src="images/basic/search.png" alt="검색" width="26" height="25"></a></li>
+				</ul>
+				</nav><!-- main_menu -->
+				
+				
+
+			</header><!-- top -->
+		</div><!-- top_wrap -->
+	</div><!--  border_wrap -->
+		
+	<div id="main_img">
+		<h2>커피빈만의 특별한 혜택, <span>"Coffeebean Members Club"</span></h2>
+		<p>커피빈 멤버스 클럽은 커피빈 카드를 등록하여 사용하는 커피빈을 이용해주시는 고객님을 위한 특별한 멤버스 혜택입니다.<br>커피빈 매장에서 발급 후 등록된 커피빈 카드를 매장에서 사용하시면 ‘콩’을 적립해 드립니다.  <br>클럽 멤버가 되면 1년간 자격이 유지되며, 1년 동안 적립된콩의 개수에 따라 1년 후의 클럽이 결정됩니다.<br>적립한 콩은 적립일 기준, 12개월부터 선입선출방식으로 자동소멸됩니다. </p>
+	</div><!-- main_img -->
+
+	<div id="container">
+		<div id="level">
+			<h3>등급 및 혜택</h3>
+			<p id="level_img"><img src="images/membersclub/bg.jpg" alt="커피" width="950" height="300"></p>
+			<div id="level_info_wrap">
+			<div id="pink">
+				<h4>PINK CLUB</h4>
+				<ul class="info_list">
+					<li>커피빈 카드 최초 등록시 무료음료 쿠폰 증정<br>(3만원 이상 충전 시에만 지급)</li>
+					<li>커피빈 카드로 구매시 자동소득공제</li>
+					<li>분실 신고 시점의 카드 잔액 보호</li>
+				</ul>
+			</div><!-- pink -->
+			<div id="gold">
+				<h4>GOLD CLUB</h4>
+				<ul class="info_list">
+					<li>커피빈 카드로 구매시 Extra 1개 무료</li>
+					<li>무료음료권 2매 증정</li>
+					<li>Birthday 무료음료권 증정</li>
+					<li>커피빈 카드로 구매시 자동소득공제</li>
+					<li>분실 신고 시점의 카드 잔액 보호 </li>
+				</ul>
+			</div><!-- gold -->
+			<div id="vvip">
+				<h4>VVIP</h4>
+				<ul class="info_list">
+					<li>무료음료권 4매 증정</li>
+					<li>Birthday 무료음료권 증정</li>
+					<li>커피빈 카드로 구매시 자동소득공제</li>
+					<li>분실 신고 시점의 카드 잔액 보호 </li>
+					<li>커피스 멤버스몰 할인 혜택 제공</li>
+				</ul>
+			</div><!-- vvip -->
+			</div><!-- level_info_wrap -->
+		</div><!-- level -->  
+
+		<div id="register">
+			<h3>회원등록</h3>
+			<p id="r_txt1">커피빈 카드는 일정 금액 충전을 통해 커피빈 제품 및 상품을 구입할 수 있는 충전식 선불카드입니다.<br>커피빈 카드로 결제시 다양한 혜택을 누릴 수 있으며, 언제든지 재충전이 가능하므로 지속적으로 사용할 수 있습니다.<br>홈페이지나 모바일 앱에 회원가입 및 카드를 등록하지 않으실 경우에는 커피빈 멤버스클럽 혜택은 적용받으실 수 없습니다. </p>
+			<div class="step">
+				<div id="step1">
+					<!--  <h4>1단계</h4>-->
+					<p class="img_box"><img src="images/membersclub/step1.png" alt="1단계" width="94" height="115"/></p>
+					<p class="txt1">매장 또는 모바일 앱에서<br>충전식 선불카드 구입하기</p>
+				</div>
+				<div id="step2">
+					<!-- <h4>2단계</h4>-->
+					<p class="img_box"><img src="images/membersclub/step2.png" alt="2단계" width="94" height="115"/></p>
+					<p class="txt1">커피빈 멤버스클럽<br>모바일 앱 다운받기</p>
+				</div>
+				<div id="step3">
+					<!-- <h4>3단계</h4>-->
+					<p class="img_box"><img src="images/membersclub/step3.png" alt="3단계" width="94" height="115"/></p>
+					<p class="txt1">모바일 앱이나 홈페이지에<br>회원가입 후 선불카드 등록</p>
+				</div>
+				<div id="step4">
+					<!-- <h4>4단계</h4>-->
+					<p class="img_box"><img src="images/membersclub/step4.png" alt="4단계" width="94" height="115"/></p>
+					<p class="txt1">커피빈 카드나 모바일 앱에<br>등록된 카드로 매장 제품 구입</p>
+				</div>
+			</div><!-- step -->
+			<div id="btn_wrap1">
+				<input value="커피빈 카드 등록하기"   id="card_btn1">
+				<input value="커피빈 카드 등록하기"   id="card_btn2">
+			</div>
+		</div><!-- register -->	
+	</div><!-- container -->
+
+	<div id="card">
+		<h3>COFFEEBEAN CARD</h3>
+		<p>커피빈 카드는 일정 금액 충전을 통해 커피빈 제품 및 상품을 구입할 수 있는<br>충전식 선불카드입니다. 커피빈 카드로 결제시 다양한 혜택을 누릴 수 있으며,<br>언제든지 재충전이 가능하므로 지속적으로 사용할 수 있습니다.홈페이지나<br>모바일 앱에 회원가입 및 카드를 등록하지 않으실 경우, 멤버스 클럽 혜택은<br>적용받으실 수 없습니다.</p>
+	</div>
+	
+	<div id="btn">
+		<input type="button" value="커피빈 카드 종류 보기" id="kind_btn1">
+		<input type="button" value="커피빈 카드 종류 보기" id="kind_btn2">
+	</div><!-- btn -->
+
+<div id="bottom_wrap">
+		<div id="notice_sub">
+			<div id="notice_wrap">
+					<p class="notice">공지사항 - 커피빈 웹 사이트 리뉴얼에 따른 이벤트 안내</p>
+					<ul class="bottom_list">
+						<li class="li1"><a href="#">이용약관</a></li>
+						<li class="li2"><a href="#">개인정보취급방침</a></li>
+						<li class="li3"><a href="#">멤버스카드이용약관</a></li>
+						<li class="li4"><a href="#">이메일무단수집거부</a></li>
+					</ul><!-- bottom_list -->
+
+						<select>
+							<option value="커피빈 코리아" onclick="location.href='index.html'">커피빈 코리아</option>
+							<option value="커피빈 US" onclick="location.href='http://coffeebean.com/'">커피빈 US</option>
+						</select>
+
+			</div><!--notice_wrap-->
+		</div><!--notice_sub-->
+		<div id="bottom_sub">
+			<footer id="bottom">
+				<div id="bottom_left">
+					<p id="bottom_logo"><img src="images/index/bottom_logo.png" alt="로고" width="104" height="103" onclick="location.href='index.html'"/></p>
+					<address>서울시 강남구 봉은사로 99길 7<br>
+					사업자등록번호 120-86-07029<span class="address1">(주)커피빈코리아 대표이사 박상배</span><br>
+					고객 센터 운영 시간 : 09:00 - 18:00<span class="address2">TEL:02-1577-4708</span><br>
+					&copy; 2016. The Coffee Bean. All rights reserved.
+					</address>
+					
+				</div><!--bottom_left-->
+				<div id="bottom_right">
+					<ul id="bottom_menu">
+						<li class="bottom_menu1 line1"><a href="intro.html">커피빈소개</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 코리아</a></li>
+								<li><a href="#">커피빈 소식</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu2 line1"><a href="menu.html">메뉴</a>
+							<ul class="bottom_sub">
+								<li><a href="#">음료</a></li>
+								<li><a href="#">차</a></li>
+								<li><a href="#">케이크</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu3 line1"><a href="promotion.html">이벤트</a>
+							<ul class="bottom_sub">
+								<li><a href="#">진행중인 이벤트</a></li>
+								<li><a href="#">종료된 이벤트</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu4 line1"><a href="store.html">매장정보</a>
+							<ul class="bottom_sub">
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">신규매장</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu5 line1"><a href="membersclub.html">멤버스클럽</a>
+							<ul class="bottom_sub">
+								<li><a href="#">멤버스클럽</a></li>
+								<li><a href="#">커피빈 카드</a></li>
+							</ul>
+						</li>
+						<li class="bottom_menu6 line1"><a href="customer.html">고객센터</a>
+							<ul class="bottom_sub">
+								<li><a href="#">커피빈 앱</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">문의하기</a></li>
+							</ul>
+						</li>
+					<!--</ul> menu -->
+					</ul><!--bottom_menu-->
+				</div><!--bottom_right-->
+			</footer><!-- bottom -->
+		</div><!-- bottom_sub -->
+	</div><!-- bottom_wrap -->
+</body>
+</html>

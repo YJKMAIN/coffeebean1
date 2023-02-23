@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url("top.css");
+@import url("bottom.css");
+
+
+/* font */
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
+
+/* reset */
+a{color:#333333;}
+body{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+
+
+
+/* wrap */
+#wrap{width:540px; margin:0 auto; height:550px; margin-top:50px; margin-bottom:200px;}
+
+#login_top_wrap{width:540px; height:70px;}
+#login_top_wrap h1{font-family: 'Source Serif Pro', serif; text-align:center; font-size:30px; padding-top:80px; height:60px;
+				background:url(../images/basic/brand_bg.png) no-repeat center bottom; font-weight:normal;}
+
+
+/* 회원로그인, 비회원(주문조회)  - 중요*/ 
+ul#login_list{width:540px; height:50px; margin-bottom:30px; margin-top:130px;}
+ul#login_list li{float:left; width:270px; height:50px; line-height:50px;}
+ul#login_list li a{width:270px; height:50px; display:block; color:#333333; text-align:center; border-bottom:1px solid #666666; font-size:14px; font-family:"돋움",Dotum,sans-serif; background-color:#f6f6f6;}
+ul#login_list li a.selected1{border:1px solid #666666; border-bottom:none; width:268px; font-weight:bold; background-color:#ffffff;}
+
+#login_wrap{clear:both; width:540px;}
+
+
+/* 회원 로그인 내용 */
+#login1{width:540px;}
+#u_id, #u_pwd{border:1px solid #cccccc; width:538px; height:50px; text-indent:1em; font-size:15px; line-height:50px; margin-bottom:10px;}
+
+/*로그인*/
+#btn_wrap1{width:540px; height:60px; margin-bottom:20px; position:relative; overflow:hidden;}
+#s_btn1, #s_btn2{font-size:15px; cursor:pointer; width:540px; height:60px; font-weight:bold; position:absolute; left:0; top:0;}
+#s_btn1{border:none; background-color:#333333; color:#ffffff; z-index:2;}
+#s_btn2{border:1px solid #333333; background-color:#ffffff; color:#333333;}
+
+
+/* 비회원(주문조회) */
+#login2{width:540px;}
+#u_order{border:1px solid #cccccc; width:538px; height:50px; text-indent:1em; font-size:15px; line-height:50px; margin-bottom:10px;}
+#tel_wrap{margin-bottom:4px; width:540px; height:60px;}
+#tel_wrap p{float:left;}
+#tel1, #tel2, #tel3{border:1px solid #cccccc; height:50px;}
+#tel1{width:126px; height:54px;}
+#tel2, #tel3{width:197px;}
+
+
+#btn_wrap2{width:540px; height:60px; margin-bottom:20px; position:relative; overflow:hidden;}
+#s_btn3, #s_btn4{font-size:15px; cursor:pointer; width:540px; height:60px; font-weight:bold; position:absolute; left:0; top:0;}
+#s_btn3{border:none; background-color:#333333; color:#ffffff; z-index:2;}
+#s_btn4{border:1px solid #333333; background-color:#ffffff; color:#333333;}
+
+
+/*list_wrap*/
+.list_wrap{border-top:1px solid #cccccc; padding-top:15px;}
+.list_wrap li{float:left; background-color:yellow; background:url(../images/basic/line.jpg) no-repeat left center;}
+.list_wrap li:first-child{background:none;}
+.list_wrap li a{width:180px; text-align:center; display:block; font-size:13px;}

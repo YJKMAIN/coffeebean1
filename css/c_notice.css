@@ -1,0 +1,16 @@
+@charset "utf-8";
+#c_notice{background-color:#512C1D; width:300px; height:400px; border:1px solid #512C1D;}
+
+#sub_wrap{width:270px; height:370px; margin: 15px auto 0 auto; border:2px solid #E5CDA7;}
+
+h2{margin-top:33px; text-align:center; font-size:25px; color:#ffffff;}
+
+#txt, #qr{font:normal 13px/1.5em "돋움",Dotum,sans-serif;}
+
+#txt{margin-top:40px; text-align:center; color:#ffffff;}
+
+#qr{text-align:center; margin-top:20px;}
+
+.close_a{text-align:center; font-size:12px; display:inline-block; color:#E5CDA7; width:266px; text-align:center; margin-top:10px;}
+
+
